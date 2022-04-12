@@ -12,7 +12,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at: https://front-end-by-rimantas.github.io/35-grupe-portfolio/
 
-Design: https://react.theme-land.com/theme-five
+Design: https://rstheme.com/products/html/braintech/index5.html#
 
 ## Project features
 
