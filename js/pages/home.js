@@ -14,6 +14,9 @@
 /* about us 1: start */
 /* about us 1: end */
 
+/* about us 2: start */
+/* about us 2: end */
+
 /* services: start */
 /* services: end */
 
@@ -31,6 +34,9 @@
 
 /* companies2: start */
 /* companies2: end */
+
+/* contacts: start */
+/* contacts: end */
 
 /* footer: start */
 /* footer: end */
