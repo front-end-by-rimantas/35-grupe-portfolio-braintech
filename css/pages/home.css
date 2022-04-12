@@ -11,6 +11,9 @@
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header: start */
+.container-header {
+    background-color: #0d69da;
+}
 /* header: end */
 
 /* hero: start */
