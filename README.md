@@ -28,3 +28,8 @@ Design: https://react.theme-land.com/theme-five
 ## Authors
 
 Rimantas: [Github](https://github.com/belauzas)
+Gytis: [Github](https://github.com/LeoGytis)
+Arturas: [Github] (https://github.com/ArturasKi)
+Julija: [Github] (https://github.com/julijajarmale)
+Kestutis [Github] (https://github.com/Kestutisjulius)
+Dileta: [Github](https://github.com/BagiraNord)
