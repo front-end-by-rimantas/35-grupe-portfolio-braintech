@@ -27,9 +27,8 @@ Design: https://rstheme.com/products/html/braintech/index5.html#
 
 ## Authors
 
-Rimantas: [Github](https://github.com/belauzas)
-Gytis: [Github](https://github.com/LeoGytis)
-Arturas: [Github](https://github.com/ArturasKi)
-Julija: [Github](https://github.com/julijajarmale)
-Kestutis [Github](https://github.com/Kestutisjulius)
+Gytis: [Github](https://github.com/LeoGytis)<br>
+Arturas: [Github](https://github.com/ArturasKi)<br>
+Julija: [Github](https://github.com/julijajarmale)<br>
+Kestutis [Github](https://github.com/Kestutisjulius)<br>
 Dileta: [Github](https://github.com/BagiraNord)

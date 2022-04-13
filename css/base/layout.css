@@ -49,7 +49,7 @@
     float: left;
     margin-left: var(--half-gap);
     margin-right: var(--half-gap);
-    background-color: yellowgreen;
+    background-color: pink;
 }
 
 .row > .reverse {
@@ -694,7 +694,7 @@
     }
 }
 
-/* @media (min-width: 1399px) {
+    @media (min-width: 1399px) {
   :root {
     --container-padding: 80px;
   }
@@ -793,4 +793,4 @@
 .row > .forward-xxl {
   float: left;
 }
-} */
+}
