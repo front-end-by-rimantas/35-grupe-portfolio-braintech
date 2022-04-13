@@ -694,7 +694,7 @@
     }
 }
 
-/* @media (min-width: 1399px) {
+    @media (min-width: 1399px) {
   :root {
     --container-padding: 80px;
   }
@@ -793,4 +793,4 @@
 .row > .forward-xxl {
   float: left;
 }
-} */
+}
