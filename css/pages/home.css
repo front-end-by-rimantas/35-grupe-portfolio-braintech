@@ -26,12 +26,14 @@
 /* about us 2: end */
 
 /* services: start */
+
 .service-col > img {
     width: 70px;
     height: 70px;
     padding: 10px;
     padding-top: 20px;
 }
+
 /* services: end */
 
 /* why choose us: start */
