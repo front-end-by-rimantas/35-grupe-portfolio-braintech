@@ -1,0 +1,16 @@
+.get-started-btn {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 50px;
+    border-radius: 35px;
+    background: linear-gradient(220deg, #f27c1e 0%, #dd4c23 79%);
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-decoration: none !important;
+    display: inline-block;
+}
+.get-started-btn:hover {
+    border-color: white;
+    background: linear-gradient(180deg, #dd4c23 19%, #f27c1e 100%);
+}
