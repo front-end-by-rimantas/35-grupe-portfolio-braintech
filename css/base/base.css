@@ -1,4 +1,7 @@
 :root {
+    --background1: linear-gradient(100deg, #03228f 34%, #0e73e4 100%);
+    --background2:#F6F7F9;
+    --background3: linear-gradient(330deg, #00005b 0%, #020275 90%);
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -35,4 +38,16 @@ body {
     width: 100%;
     font-family: 'Livvic',
         sans-serif;
+}
+
+.bg-background1{
+    background-image: var(--background1);
+}
+
+.bg-background2{
+    background-color: var(--background2);
+}
+
+.bg-background3{
+    background-image: var(--background3);
 }
