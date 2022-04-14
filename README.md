@@ -12,7 +12,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at: https://front-end-by-rimantas.github.io/35-grupe-portfolio-braintech/
 
-Design: https://rstheme.com/products/html/braintech/index5.html#
+Design: https://rstheme.com/products/html/braintech/index5.html
 
 ## Project features
 
@@ -27,9 +27,8 @@ Design: https://rstheme.com/products/html/braintech/index5.html#
 
 ## Authors
 
-Rimantas: [Github](https://github.com/belauzas)
-Gytis: [Github](https://github.com/LeoGytis)
-Arturas: [Github](https://github.com/ArturasKi)
-Julija: [Github](https://github.com/julijajarmale)
-Kestutis [Github](https://github.com/Kestutisjulius)
-Dileta: [Github](https://github.com/BagiraNord)
+Gytis Leonavičius: [Github](https://github.com/LeoGytis) [LinkedIn](https://www.linkedin.com/in/gytis-leonavicius-74839519a/) <br>
+Artūras Kisielius: [Github](https://github.com/ArturasKi) [LinkedIn](www.linkedin.com/in/artūras-kisielius-5745a09b) <br>
+Julija Ilginytė-Jarmalė: [Github](https://github.com/julijajarmale) [LinkedIn](https://www.linkedin.com/in/julija-ilginyte-jarmale/) <br>
+Kęstutis Skrebė [Github](https://github.com/Kestutisjulius) [LinkedIn](https://www.linkedin.com/in/k%C4%99stutis-skreb%C4%97-992b5a217/) <br>
+Dileta Nenėnė: [Github](https://github.com/BagiraNord) [LinkedIn](https://www.linkedin.com/in/dileta-nenene-578a1795/)<br>
