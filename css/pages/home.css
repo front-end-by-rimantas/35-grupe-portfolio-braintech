@@ -11,6 +11,10 @@
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header: start */
+.logo-header{
+    width:130px;
+    height:27px;
+}
 
 /* header: end */
 
@@ -21,12 +25,19 @@
 /* hero: end */
 
 /* companies1: start */
+.partner-logo{
+    width:210px;
+}
 /* companies1: end */
 
 /* about us 1: start */
 /* about us 1: end */
 
 /* about us 2: start */
+.about2-img{
+    width: 450px;
+
+}
 /* about us 2: end */
 
 /* services: start */
