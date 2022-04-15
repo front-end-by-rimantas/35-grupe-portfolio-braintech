@@ -11,10 +11,19 @@
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header: start */
+.header-logo {
+    width: 130px;
+    height: 27px;
+}
 
 /* header: end */
 
 /* hero: start */
+
+.hero-img {
+    width:517px;
+}
+
 /* hero: end */
 
 /* companies1: start */
@@ -24,6 +33,10 @@
 /* about us 1: end */
 
 /* about us 2: start */
+.about-img{
+    width: 450px;
+    height: 434px;
+}
 /* about us 2: end */
 
 /* services: start */
@@ -36,6 +49,10 @@
 /* services: end */
 
 /* why choose us: start */
+.whychoose-img{
+    width: 450px;
+    height:450px;
+}
 /* why choose us: end */
 
 /* let's talk: start */
