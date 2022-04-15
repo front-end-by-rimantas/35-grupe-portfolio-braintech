@@ -41,11 +41,29 @@
 /* about us 2: end */
 
 /* services: start */
-.service-col > img {
-    width: 70px;
-    height: 70px;
+.services-col * img {
+    width: 60px;
+    height: 60px;
     padding: 10px;
-    padding-top: 20px;
+    background-color: var(--orange);
+    box-sizing: border-box;
+}
+.services-icon {
+    width: 270px;
+}
+.services-number {
+    font-size: 60px;
+    color: grey;
+    float: right;
+}
+.services-col > a {
+    display: inline-block;
+    margin-bottom: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
 }
 /* services: end */
 
