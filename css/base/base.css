@@ -52,3 +52,43 @@ body {
 .bg-background3{
     background-image: var(--background3);
 }
+
+.section-title {
+    font-size: 14px;
+    color: #03228F;
+    padding-left: 95px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+}
+.section-title::before {
+    content: '';
+    background-color: var(--orange);
+    height: 4px;
+    width: 12px;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+.section-title::after {
+    content: '';
+    background-color: var(--orange);
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    left: 24px;
+    top: 12px;
+    margin-left: 0;
+}
+
+.section-header {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    padding-bottom: 20px;
+    text-align: left;
+}
