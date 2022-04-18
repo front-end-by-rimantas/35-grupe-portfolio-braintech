@@ -1,5 +1,5 @@
 :root {
-    --background1: linear-gradient(100deg, #03228f 34%, #0e73e4 100%);
+    --background1: linear-gradient(-270deg, #03228f 34%, #0e73e4 100%);
     --background2:#F6F7F9;
     --background3: linear-gradient(330deg, #00005b 0%, #020275 90%);
     --blue: #007bff;
@@ -23,6 +23,7 @@
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #343a40;
+    --lgray: #9FA4B4;
 }
 
 

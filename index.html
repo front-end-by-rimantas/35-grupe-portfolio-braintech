@@ -14,6 +14,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/pages/home.css" />
     <link rel="stylesheet" href="./fonts/Livvic/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- analytics -->
   </head>
 
@@ -21,27 +22,39 @@
     <!-- 3rd-party: FB -->
 
     <!-- header: start -->
-    <header class="container">
+    <header class="container bg-background1">
       <div class="row">
         <div class="col-12">
-          <img src="./img/header/logo-dark.png" alt="Logo" class="logo-header">
-          <nav class="hidden visible-lg">
-            <a href="#">Home +</a>
+          <img src="./img/header/logo-light.png" alt="Logo" class="logo-header">
+          <nav class="hidden visible-lg navigation">
+            <a href="#">Home</a>
             <a href="#">About</a>
-            <a href="#">Services +</a>
-            <a href="#">Pages +</a>
-            <a href="#">Blog +</a>
+            <a href="#">Services</a>
+            <a href="#">Pages</a>
+            <a href="#">Blog</a>
             <a href="#">Contact</a>
           </nav>
-          <div class="hidden visible-lg">
-            <i>SEARCH</i>
-            <div class="hidden visible-lg">
-              <i>MENU</i>
-            </div>
+          <div class="hidden visible-lg side-icon">
+            <a href="#" class="hidden visible-lg nav-expander">
+              <i class="fa fa-circle nav-circle1"></i>
+              <i class="fa fa-circle nav-circle2"></i>
+              <i class="fa fa-circle nav-circle1"></i>
+              <br>
+              <i class="fa fa-circle nav-circle2"></i>
+              <i class="fa fa-circle nav-circle1"></i>
+              <i class="fa fa-circle nav-circle2"></i>
+              <br>
+              <i class="fa fa-circle nav-circle1"></i>
+              <i class="fa fa-circle nav-circle2"></i>
+              <i class="fa fa-circle nav-circle1"></i>
+            </a>
+            <a href="#" class="search-icon">
+              <i class="fa fa-search"></i>
+            </a>
           </div>
-          <div class="visible-sm hidden-lg">
-            <i>HAMBURGER</i>
-          </div>
+          <a href="#" class="visible-sm hidden-lg side-icon hamburger">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
       </div>
     </header>
