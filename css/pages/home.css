@@ -13,20 +13,22 @@
 /* header: start */
 .logo-header {
     float: left;
-    width: 130px;
-    height: 27px;
-    margin-top: 5px;
+    width: 160px;
+    height: 35px;
 }
 
 .navigation {
-    float: left;
     position: relative;
     padding-top: 5px;
-    margin-left: 200px;
+    margin-left: 280px;
 }
 
-.navigation > a {
-    margin-right: 60px;
+.nav-list {
+    display: inline-flex;
+}
+
+.navigation > .nav-list > a {
+    margin-right: 70px;
     color: var(--white);
     font-size: 15px;
     font-weight: 600;
@@ -35,25 +37,36 @@
     line-height: 28px;
 }
 
-.navigation > a:first-child {
+.nav-list:first-child > a {
+    position: relative;
     color: var(--lgray);
 }
 
-.navigation > a:hover {
+.navigation > .nav-list > a:hover {
     color: var(--lgray);
+}
+
+@media only screen and (max-width: 1440px) {
+    .navigation {
+        margin-left: 170px;
+    }
+
+    .navigation > .nav-list > a {
+        margin-right: 60px;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
     .navigation {
-        margin-left: 150px;
+        margin-left: 120px;
     }
 
-    .navigation > a {
+    .navigation > .nav-list > a {
         margin-right: 42px;
     }
 }
 
-.navigation > a::after {
+.navigation > .nav-list > a::after {
     position: absolute;
     content: "+";
     padding-left: 5px;
@@ -61,28 +74,23 @@
     font-weight: 400;
 }
 
-.navigation > a:nth-child(2):after {
+.navigation > .nav-list > a:last-child:after {
     position: absolute;
     content: "";
 }
 
-.navigation > a:last-child:after {
-    position: absolute;
-    content: "";
-}
-
-.navigation > a:hover::after {
+.navigation > .nav-list > a:hover::after {
     content: " -";
     letter-spacing: 2px;
     font-size: 15px;
     font-weight: 400;
 }
 
-.navigation > a:hover:nth-child(2):after {
+.navigation > .nav-list > a:hover:nth-child(2):after {
     content: "";
 }
 
-.navigation > a:hover:last-child:after {
+.navigation > .nav-list > a:hover:last-child:after {
     content: "";
 }
 
@@ -99,18 +107,10 @@
     margin-right: 30px;
 }
 
-.search-icon:hover {
-    cursor: pointer;
-}
-
 .nav-expander {
     float: right;
-    font-size: 5px;
+    font-size: 6px;
     margin-top: 2px;
-}
-
-.nav-expander:hover {
-    cursor: pointer;
 }
 
 .nav-expander .nav-circle1 {
@@ -128,9 +128,36 @@
     margin-top: 5px;
 }
 
-.hamburger:hover {
-    cursor: pointer;
+.nav-listdrop {
+    display: none;
 }
+
+.nav-listdrop > li {
+    list-style: none;
+}
+
+.nav-listdrop > li > a {
+    position: relative;
+    text-decoration: none;
+    line-height: 36px;
+    font-weight: 400;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.navigation .nav-list:hover .nav-listdrop {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 50px;
+    transition: 2s ease-out;
+    border-radius: 0 0 5px 5px;
+}
+
 
 /* header: end */
 
