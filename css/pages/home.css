@@ -179,6 +179,13 @@
     }
 }
 
+@media only screen and (min-width: 1440px) {
+    .navigation .nav-list:nth-child(1):hover .nav-listdrop {
+        left: -440px;
+        width: 1280px;
+    }
+}
+
 .nav-list > .nav-listdrop > .nav-listdropcolumn  {
     display: inline-block;
     width: 24%;
