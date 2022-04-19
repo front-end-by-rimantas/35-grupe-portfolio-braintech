@@ -1,4 +1,7 @@
-:root-color {
+:root {
+    --background1: linear-gradient(-270deg, #03228f 34%, #0e73e4 100%);
+    --background2:#F6F7F9;
+    --background3: linear-gradient(330deg, #00005b 0%, #020275 90%);
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -20,7 +23,9 @@
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #343a40;
+    --lgray: #9FA4B4;
 }
+
 
 body,
 body * {
@@ -35,4 +40,56 @@ body {
     width: 100%;
     font-family: 'Livvic',
         sans-serif;
+}
+
+.bg-background1{
+    background-image: var(--background1);
+}
+
+.bg-background2{
+    background-color: var(--background2);
+}
+
+.bg-background3{
+    background-image: var(--background3);
+}
+
+.section-title {
+    font-size: 14px;
+    color: #03228F;
+    padding-left: 95px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+}
+.section-title::before {
+    content: '';
+    background-color: var(--orange);
+    height: 4px;
+    width: 12px;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+.section-title::after {
+    content: '';
+    background-color: var(--orange);
+    height: 4px;
+    width: 50px;
+    position: absolute;
+    left: 24px;
+    top: 12px;
+    margin-left: 0;
+}
+
+.section-header {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    padding-bottom: 20px;
+    text-align: left;
 }
