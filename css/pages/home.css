@@ -179,7 +179,14 @@
     box-shadow: 0 0 20px rgb(0 0 0 / 15%);
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (min-width: 1199px) {
+    .navigation .nav-list:nth-child(1):hover .nav-listdrop {
+        left: -280px;
+        width: 930px;
+    }
+}
+
+@media only screen and (max-width: 1286px) {
     .navigation .nav-list:nth-child(1):hover .nav-listdrop {
         left: -280px;
         width: 930px;
