@@ -204,6 +204,17 @@
 /* companies2: end */
 
 /* contacts: start */
+.contacts-col{
+    background: url(../../img/contacts/footer-bg.png);
+    background-color: #F5F6F9;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bottom-logo{
+    height: 40px;
+    margin-bottom: 30px;
+}
 /* contacts: end */
 
 /* footer: start */
