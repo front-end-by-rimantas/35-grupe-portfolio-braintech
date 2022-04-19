@@ -11,6 +11,11 @@
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header: start */
+.header {
+    align-items: center;
+    margin-top: 15px;
+}
+
 .logo-header {
     float: left;
     width: 160px;
@@ -20,6 +25,7 @@
 .navigation {
     position: relative;
     padding-top: 5px;
+    line-height: 50px;
     margin-left: 280px;
 }
 
@@ -152,14 +158,14 @@
     min-width: 250px;
     background-color: white;
     padding: 20px;
-    margin-top: 20px;
-    transition: 2s;
+    margin-top: 0px;
+    transition: all 0.3s ease;
     border-radius: 0 0 5px 5px;
     z-index: 1;
     box-shadow: 0 0 20px rgb(0 0 0 / 15%);
 }
 
-.navigation .nav-list:nth-child(1):hover .nav-listdrop {
+.navigation .nav-list:nth-child(1):hover:focus .nav-listdrop {
     display: block;
     position: absolute;
     left: -330px;
