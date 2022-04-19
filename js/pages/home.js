@@ -1,5 +1,8 @@
 // component imports
-
+import { renderFeatures } from '../components/features/features.js';
+import { aboutUsData, aboutUsDataNext } from '../data/aboutUsData.js';
+import { servicesData } from '../data/servicesData.js';
+import { whyChooseUs } from '../data/whyChooseUs.js';
 // components execution
 
 /* header: start */
@@ -12,15 +15,19 @@
 /* companies1: end */
 
 /* about us 1: start */
+
 /* about us 1: end */
 
 /* about us 2: start */
+
 /* about us 2: end */
 
 /* services: start */
+
 /* services: end */
 
 /* why choose us: start */
+    renderFeatures('#choose_container', whyChooseUs);
 /* why choose us: end */
 
 /* let's talk: start */
