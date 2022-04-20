@@ -298,6 +298,27 @@
 /* why choose us: end */
 
 /* let's talk: start */
+.form {
+    padding: 25px 40px 50px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.form > h1 {
+    text-align: center;
+    line-height: 40px;
+}
+
+.form > p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
 /* let's talk: end */
 
 /* blogs: start */
