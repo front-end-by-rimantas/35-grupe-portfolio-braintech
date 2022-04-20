@@ -355,6 +355,29 @@
     margin-bottom: 30px;
 }
 
+.textwidget {
+    padding-bottom: 30px;
+}
+
+.contact-icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--white);
+    text-align: center;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.contact-icon:hover {
+    background-color: #106eea;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
 h5 {
     margin-bottom: 25px;
     font-size: 22px;
