@@ -70,15 +70,6 @@ body {
     background-image: var(--background1);
 }
 
-.container bg-background2 footer {
-    margin: 0;
-    padding: 0;
-    background-color: var(--background2);
-    opacity: 0.25;
-}
-
-}
-
 .bg-background2 footer {
     background-color: var(--background2); 
 }
