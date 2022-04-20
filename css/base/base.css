@@ -66,12 +66,21 @@ body {
     font-family: MyLivvic;
 }
 
-.bg-background1{
+.bg-background1 {
     background-image: var(--background1);
 }
 
-.bg-background2{
+.container bg-background2 footer {
+    margin: 0;
+    padding: 0;
     background-color: var(--background2);
+    opacity: 0.25;
+}
+
+}
+
+.bg-background2 footer {
+    background-color: var(--background2); 
 }
 
 .bg-background3{
