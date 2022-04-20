@@ -361,7 +361,56 @@
 /* blogs: end */
 
 /* testimonials: start */ 
+.testimonials-block{
+    padding-left:30px;
+}
 
+.testimonials_slides {
+    position: relative;
+    background-color:white;
+    line-height: 1.8em;
+    font-size: 18px;
+    padding-top: 100px;
+    padding-bottom:100px;
+    z-index: 0;
+    padding-left:40px;
+    width: 100%;
+}
+.png {
+    position: absolute;
+    width: 40px;
+    top: 50px;
+    left: 40px;
+}
+.person {
+    position: relative;
+    margin-top: -55px;
+    
+}
+.person-info {
+    display: inline-block;
+    padding-top:20px;
+}
+.person > img {
+    
+    z-index: 0;
+    margin-right: 15px;
+    display: inline;
+    width: 90px;
+    border-radius: 50%;
+}
+.person-info .person-name {
+
+    margin-right: 50px;
+    margin-bottom: 10px;
+    font-size:22px;
+    font-weight: 550;
+}
+.person-info .person-response {
+    display: inline;
+    margin-right: 50px;
+    
+}
 /* testimonials: end */
 
 /* companies2: start */
