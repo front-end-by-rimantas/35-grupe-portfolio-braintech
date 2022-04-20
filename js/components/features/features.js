@@ -3,10 +3,14 @@ function renderFeatures(selector, data) {
     let HTML = '';
     for (const item of data) {
         HTML += `
-     <div class="col-12">
-            <i class="fa fa-${item.icon}" aria-hidden="true"></i>
-            <h3 class="title">${item.title}</h3>
-            <p class="description">${item.desc}</p>
+
+        <div class="features">
+        <img src="../../../img/why-choose-us/${item.icon}.png" class="ico"></img>
+        
+            <div class="ico2">
+                <h3 class="title">${item.title}</h3>
+                <p class="description">${item.desc}</p>
+            </div>
         </div>
         `;
     }

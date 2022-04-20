@@ -1,16 +1,16 @@
 const whyChooseUs = [
     {
-        icon: 'process',
+        icon: 'icon1',
         title: 'First Growing Process',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo!'
     },
     {
-        icon: 'tag',
+        icon: 'icon2',
         title: 'Clean Code',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo!'
     },
     {
-        icon: 'documentation',
+        icon: 'icon3',
         title: 'Well Documentation',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo!'
     }
