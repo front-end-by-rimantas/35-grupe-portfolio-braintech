@@ -13,7 +13,6 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/pages/home.css" />
-    <link rel="stylesheet" href="./fonts/Livvic/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- analytics -->
   </head>
@@ -24,15 +23,83 @@
     <!-- header: start -->
     <header class="container bg-background1">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 header">
           <img src="./img/header/logo-light.png" alt="Logo" class="logo-header">
           <nav class="hidden visible-lg navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Pages</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <ul class="nav-list"><a href="#">Home</a>
+              <ul class="nav-listdrop">
+                <div class="nav-listdropcolumn">
+                  <li>Home Multipage</li>
+                  <li><a href="#">Main Demo</a></li>
+                  <li><a href="#">Digital Agency 01</a></li>
+                  <li><a href="#">IT Solution 01</a></li>
+                  <li><a href="#">Digital Agency 02</a></li>
+                  <li><a href="#">Software Solution</a></li>
+                  <li><a href="#">Data Analysis</a></li>
+                  <li><a href="#">IT Solution 02</a></li>
+                </div>
+                <div class="nav-listdropcolumn">
+                  <li>Home Multipage</li>
+                  <li><a href="#">Gadgets Repairs</a></li>
+                  <li><a href="#">Application Testing</a></li>
+                  <li><a href="#">IT Solution 03</a></li>
+                  <li><a href="#">Digital Agency Dark</a></li>
+                  <li><a href="#">Web Design Agency</a></li>
+                  <li><a href="#">Branding Agency</a></li>
+                  <li><a href="#">Technology Agency</a></li>
+                </div>
+                <div class="nav-listdropcolumn">
+                  <li>Home Onepage</li>
+                  <li><a href="#">Main Demo</a></li>
+                  <li><a href="#">Digital Agency 01</a></li>
+                  <li><a href="#">IT Solution 01</a></li>
+                  <li><a href="#">Digital Agency 02</a></li>
+                  <li><a href="#">Software Solution</a></li>
+                  <li><a href="#">Data Analysis</a></li>
+                  <li><a href="#">IT Solution 02</a></li>
+                </div>
+                <div class="nav-listdropcolumn">
+                  <li>Home Onepage</li>
+                  <li><a href="#">Gadgets Repairs</a></li>
+                  <li><a href="#">Application Testing</a></li>
+                  <li><a href="#">IT Solution 03</a></li>
+                  <li><a href="#">Digital Agency Dark</a></li>
+                  <li><a href="#">Web Design Agency</a></li>
+                  <li><a href="#">Branding Agency</a></li>
+                  <li><a href="#">Technology Agency</a></li>
+                </div>
+              </ul>
+            </ul>
+            <ul class="nav-list"><a href="#">About</a></ul>
+            <ul class="nav-list"><a href="#">Services</a>
+              <ul class="nav-listdrop">
+                <li><a href="#">Software Development</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Analytic Solutions</a></li>
+                <li><a href="#">Cloud And DevOps</a></li>
+                <li><a href="#">Product Design</a></li>
+                <li><a href="#">Data Center</a></li>
+              </ul>
+            </ul>
+            <ul class="nav-list"><a href="#">Pages</a>
+              <ul class="nav-listdrop">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Single Team</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Faq</a></li>
+                <li><a href="#">404</a></li>
+              </ul>
+            </ul>
+            <ul class="nav-list"><a href="#">Blog</a>
+              <ul class="nav-listdrop">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Blog Details</a></li>
+              </ul>
+            </ul>
+            <ul class="nav-list"><a href="#">Contact</a></ul>
           </nav>
           <div class="hidden visible-lg side-icon">
             <a href="#" class="hidden visible-lg nav-expander">
@@ -68,8 +135,8 @@
             <a href="#" class="play-link">playcircle</a>
             <i class="fafaplay"></i>
           </div>
-          <h1>We Are Digital Agency & Technology Solution</h1>
-          <p>
+          <h1 class="hero-title">We Are Digital Agency & Technology Solution</h1>
+          <p class="hero-p">
             We are leading technology solutions providing company all over the
             world doing over 40 years.
           </p>
@@ -121,7 +188,7 @@
     <!-- companies1: end -->
 
     <!-- about us 1: start -->
-    <section class="container">
+    <section class="container bg-background2">
       <div class="row">
         <div class="col-12 col-lg-6">
           <div class="dash">---</div>
@@ -216,7 +283,7 @@
     <!-- about us 2: end -->
 
     <!-- services: start -->
-    <section class="container">
+    <section class="container bg-background2">
       <div class="row">
           <div class="col-12 col-md-10 col-lg-6">
               <h4 class="section-title">Services</h1>
@@ -289,7 +356,7 @@
         />
 
         <div class="col-12 col-lg-6">
-          <div class="dash">---</div>
+          
           <h4 class="section-title">Why choose us</h4>
           <h1 class="section-header">We Create Result-Oriented Dynamic Applications</h1>
           <p>
@@ -297,23 +364,8 @@
             applications and mobile apps for clients all over the world.
           </p>
 
-          <ul>
-            <li>
-              <i>icon</i>
-              <a href="#">First Growing Process</a>
-              <p>At vero eos et accusamus etiusto odio praesentium.</p>
-            </li>
-            <li>
-              <i>icon</i>
-              <a href="#">Clean code</a>
-              <p>At vero eos et accusamus etiusto odio praesentium.</p>
-            </li>
-            <li>
-              <i>icon</i>
-              <a href="#">Well Documentation</a>
-              <p>At vero eos et accusamus etiusto odio praesentium.</p>
-            </li>
-          </ul>
+            <div id="choose_container"> </div>
+
         </div>
       </div>
     </section>
@@ -390,7 +442,7 @@
               />
             </div>
             <div class="form-row">
-              <a href="#" class="blue-btn">Submit now</a>
+              <a href="#" class="btn submit-btn">Submit now</a>
             </div>
           </form>
         </div>
@@ -411,13 +463,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12">SLIDER</div>
+        <div class="col-12">SLIDER
+          <a href="#" class="link btn blue-btn">Web Development</a>
+        </div>
       </div>
     </section>
     <!-- blogs: end -->
 
     <!-- testimonials: start -->
-    <div class="container">
+    <div class="container bg-background2">
       <div class="row">
         <img
           class="why_choose hidden col-lg-6 visible-lg"
@@ -469,10 +523,10 @@
     <!-- companies2: end -->
 
     <!-- contacts: start -->
-    <div class="container">
+    <div class=" contacts-col container">
       <div class="row">
         <div class="col-12 col-lg-3">
-          <img src="#" alt="logo dark" />
+          <img class="bottom-logo" src="./img/logo-dark.png" alt="logo dark" />
           <p>
             Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium
             doloremque denounce with illo inventore veritatis
@@ -537,6 +591,6 @@
     <!-- footer: start -->
     <!-- footer: end -->
 
-    <script src="./js/pages/home.js" defer></script>
+    <script src="./js/pages/home.js" type="module" defer></script>
   </body>
 </html>

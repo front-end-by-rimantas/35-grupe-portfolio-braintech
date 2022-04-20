@@ -1,0 +1,11 @@
+.feature > i {
+    
+    color: red;
+ font-size: 20px;
+}
+.feature > h3 {
+color: green;
+}
+.feature > p {
+    color: blue;
+}
