@@ -356,7 +356,11 @@
 }
 
 .textwidget {
-    padding-bottom: 30px;
+    line-height: 1.8;
+}
+
+.contact-block {
+    margin-bottom: 30px;
 }
 
 .contact-icon {
@@ -369,6 +373,7 @@
     background-color: var(--white);
     text-align: center;
     font-size: 15px;
+    margin-top: 30px;
     margin-right: 5px;
 }
 
@@ -376,6 +381,31 @@
     background-color: #106eea;
     transition: all 1s ease;
     cursor: pointer;
+}
+
+.contact-icon i {
+    padding: 10px;
+    color: #555;
+}
+
+.contact-icon i:hover {
+    color: var(--white);
+}
+
+.contact-info {
+    padding: 0px 0px 16px 40px;
+    position: relative;
+}
+
+.contact-info i {
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+    color: #106eea;
+}
+
+.contact-info a {
+    text-decoration: none;
 }
 
 h5 {
@@ -418,6 +448,8 @@ h5 {
     width: 91%;
     line-height: 25px;
     box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
 }
 
 .round-btn {
