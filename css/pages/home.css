@@ -228,6 +228,32 @@
 /* header: end */
 
 /* hero: start */
+
+.hero-sec{
+    position:relative;
+}
+
+.fa-play-circle{
+    text-shadow: none;
+    color: #ffffff;
+    position:absolute;
+}
+
+
+@media only screen and (max-width: 911px){
+    .fa-play-circle {
+        left: 80px;
+        top: -20px;
+    }
+    }
+    @media only screen and (min-width: 1199px) {
+    .fa-play-circle {
+        left: 80px;
+        top: -30px
+     
+        }
+    }
+
 .hero-title{
     font-size: 40px;
     line-height: 56px;
