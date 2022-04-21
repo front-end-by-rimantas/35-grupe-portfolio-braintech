@@ -295,15 +295,12 @@
 }
 .bar-img{
     width: 100%;
-    border-right: 8vh solid var(--lgray);
     height:7px;
     background-image: url('../../img/abous_us/bar.png');
     background-size: 12px;
-    background-color: red;
     background-repeat: repeat-x;
     margin-top: 10px;
     margin-bottom: 20px;
-
 }
 /* about us 2: end */
 
