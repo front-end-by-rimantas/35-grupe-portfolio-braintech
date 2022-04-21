@@ -1,6 +1,7 @@
 // component imports
 import { renderFeatures } from '../components/features/features.js';
 import { aboutUsData, aboutUsDataNext } from '../data/aboutUsData.js';
+import { renderAboutUsBar } from '../components/aboutUsNext/aboutUsNext.js';
 import { servicesData } from '../data/servicesData.js';
 import { whyChooseUs } from '../data/whyChooseUs.js';
 // components execution
@@ -32,7 +33,7 @@ addEventListener('scroll', function () {
 /* about us 1: end */
 
 /* about us 2: start */
-
+    renderAboutUsBar('#bar', aboutUsDataNext);
 /* about us 2: end */
 
 /* services: start */
