@@ -34,6 +34,12 @@
 }
 @font-face {
     font-family: MyLivvic;
+    src:url(../../fonts/Livvic/Livvic-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: MyLivvic;
     src:url(../../fonts/Livvic/Livvic-Light.ttf);
     font-weight: lighter;
     font-style: normal;
@@ -69,14 +75,8 @@ body {
 .bg-background1 {
     background-image: var(--background1);
 }
-
-.container bg-background2 footer {
-    margin: 0;
-    padding: 0;
+.bg-background2 {
     background-color: var(--background2);
-    opacity: 0.25;
-}
-
 }
 
 .bg-background2 footer {
