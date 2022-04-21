@@ -6,6 +6,19 @@ import { whyChooseUs } from '../data/whyChooseUs.js';
 // components execution
 
 /* header: start */
+
+const mainHeaderDOM = document.querySelector('.main-header');
+
+addEventListener('scroll', function () {
+    const headerPosition = 100;
+    if (scrollY > headerPosition) {
+        mainHeaderDOM.classList.add('header-white');
+    } else {
+        mainHeaderDOM.classList.remove('header-white');
+    }
+})
+
+
 /* header: end */
 
 /* hero: start */
