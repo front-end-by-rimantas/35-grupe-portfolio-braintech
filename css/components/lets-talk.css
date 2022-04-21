@@ -1,0 +1,20 @@
+.lt-info{
+    display: flex;
+    margin-top: 30px;
+}
+
+.lt-ico{
+    display: inline;
+    margin-top: 10px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+.lt-info .lt-text{
+    margin-top: 10px;
+}
+
+.lt-info .lt-text .lt-title{
+    padding: 0px 0px 20px 0px;
+}
+

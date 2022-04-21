@@ -3,6 +3,8 @@ import { renderFeatures } from '../components/features/features.js';
 import { aboutUsData, aboutUsDataNext } from '../data/aboutUsData.js';
 import { servicesData } from '../data/servicesData.js';
 import { whyChooseUs } from '../data/whyChooseUs.js';
+import { renderIconList } from '../components/lets-talk/lets-talk.js';
+import { letstalkData } from '../data/letstalkData.js';
 // components execution
 
 /* header: start */
@@ -34,6 +36,7 @@ import { whyChooseUs } from '../data/whyChooseUs.js';
 /* why choose us: end */
 
 /* let's talk: start */
+    renderIconList('#letstalk_container', letstalkData);
 /* let's talk: end */
 
 /* blogs: start */
