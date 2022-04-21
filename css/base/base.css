@@ -34,6 +34,12 @@
 }
 @font-face {
     font-family: MyLivvic;
+    src:url(../../fonts/Livvic/Livvic-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: MyLivvic;
     src:url(../../fonts/Livvic/Livvic-Light.ttf);
     font-weight: lighter;
     font-style: normal;
@@ -66,12 +72,15 @@ body {
     font-family: MyLivvic;
 }
 
-.bg-background1{
+.bg-background1 {
     background-image: var(--background1);
 }
-
-.bg-background2{
+.bg-background2 {
     background-color: var(--background2);
+}
+
+.bg-background2 footer {
+    background-color: var(--background2); 
 }
 
 .bg-background3{
@@ -116,4 +125,12 @@ body {
     line-height: 46px;
     padding-bottom: 20px;
     text-align: left;
+}
+
+.section-p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: #454545;
 }

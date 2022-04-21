@@ -27,7 +27,10 @@ import { whyChooseUs } from '../data/whyChooseUs.js';
 /* services: end */
 
 /* why choose us: start */
-    renderFeatures('#choose_container', whyChooseUs);
+    const [featureErr, featureContent] = renderFeatures('#choose_container', whyChooseUs);
+    if(featureErr) {
+        console.error(featureContent);
+    }
 /* why choose us: end */
 
 /* let's talk: start */

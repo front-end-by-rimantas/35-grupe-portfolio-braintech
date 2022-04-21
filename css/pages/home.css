@@ -228,6 +228,32 @@
 /* header: end */
 
 /* hero: start */
+
+.hero-sec{
+    position:relative;
+}
+
+.fa-play-circle{
+    text-shadow: none;
+    color: #ffffff;
+    position:absolute;
+}
+
+
+@media only screen and (max-width: 911px){
+    .fa-play-circle {
+        left: 80px;
+        top: -20px;
+    }
+    }
+    @media only screen and (min-width: 1199px) {
+    .fa-play-circle {
+        left: 80px;
+        top: -30px
+     
+        }
+    }
+
 .hero-title{
     font-size: 40px;
     line-height: 56px;
@@ -298,13 +324,93 @@
 /* why choose us: end */
 
 /* let's talk: start */
+.form {
+    padding: 25px 40px 50px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.form > h1 {
+    text-align: center;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.form > p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 12px 16px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    background-color: var(--background2);
+    outline-style: none;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
 /* let's talk: end */
 
 /* blogs: start */
 /* blogs: end */
 
 /* testimonials: start */ 
+.testimonials-block{
+    padding-left:30px;
+}
 
+.testimonials_slides {
+    position: relative;
+    background-color:white;
+    line-height: 1.8em;
+    font-size: 18px;
+    padding-top: 100px;
+    padding-bottom:100px;
+    z-index: 0;
+    padding-left:40px;
+    width: 100%;
+}
+.png {
+    position: absolute;
+    width: 40px;
+    top: 50px;
+    left: 40px;
+}
+.person {
+    position: relative;
+    margin-top: -55px;
+    
+}
+.person-info {
+    display: inline-block;
+    padding-top:20px;
+}
+.person > img {
+    
+    z-index: 0;
+    margin-right: 15px;
+    display: inline;
+    width: 90px;
+    border-radius: 50%;
+}
+.person-info .person-name {
+
+    margin-right: 50px;
+    margin-bottom: 10px;
+    font-size:22px;
+    font-weight: 550;
+}
+.person-info .person-response {
+    display: inline;
+    margin-right: 50px;
+    
+}
 /* testimonials: end */
 
 /* companies2: start */
@@ -318,10 +424,134 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .bottom-logo{
     height: 40px;
     margin-bottom: 30px;
 }
+
+.textwidget {
+    line-height: 1.8;
+}
+
+.contact-block {
+    margin-bottom: 30px;
+}
+
+.contact-icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--white);
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-right: 5px;
+}
+
+.contact-icon:hover {
+    background-color: #106eea;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.contact-icon i {
+    padding: 10px;
+    color: #555;
+}
+
+.contact-icon i:hover {
+    color: var(--white);
+}
+
+.contact-info {
+    padding: 0px 0px 16px 40px;
+    position: relative;
+}
+
+.contact-info i {
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+    color: #106eea;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+h5 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.it-services {
+    display: block;
+}
+
+.it-services > li {
+    margin-bottom: 12px;
+    list-style: none;
+}
+
+.it-services > li > a {
+    text-decoration: none;
+}
+
+.form-row-2 {
+    margin: 30px 0 0;
+    position: relative;
+}
+
+.partner-plane {
+    line-height: 1.8;
+}
+
+.input-2 {
+    font-size: 13px;
+    padding: 16px 60px 16px 20px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    background-color: var(--white);
+    box-shadow: 0 0 25px #eeeeee;
+    outline-style: none;
+    width: 91%;
+    line-height: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+}
+
+.round-btn {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    border-radius: 50%;
+    padding: 15px 28px 15px;
+    background-image: linear-gradient(90deg, #03228f 0%, #0e73e4 100%);
+    border: none;
+    font-size: 0;
+}
+
+.round-btn:hover {
+    cursor: pointer;
+}
+
+.flaticon-send i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    bottom: 0;
+    font-size: 20px;
+    color: var(--white);
+}
+
 /* contacts: end */
 
 /* footer: start */

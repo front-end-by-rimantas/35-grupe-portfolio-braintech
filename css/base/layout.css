@@ -792,4 +792,11 @@
 .row > .forward-xxl {
   float: left;
 }
+.row > .copyright {
+    float: left;
+}
+.row > .footer-links {
+    float: right;
+    display: inline;
+}
 }
