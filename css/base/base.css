@@ -98,6 +98,8 @@ body {
     margin-bottom: 10px;
     display: inline-block;
     position: relative;
+    transition: all 0.4s;
+
 }
 .section-title::before {
     content: '';
@@ -125,6 +127,19 @@ body {
     line-height: 46px;
     padding-bottom: 20px;
     text-align: left;
+    transition: all 0.4s;
+}
+@media (max-width: 1199px ) {
+    .section-header {
+        font-size: 27px;
+        transition: all 0.4s;
+    }
+}
+@media (max-width: 480px ) {
+    .section-header {
+        font-size: 24px;
+        transition: all 0.4s;
+    }
 }
 
 .section-p{
