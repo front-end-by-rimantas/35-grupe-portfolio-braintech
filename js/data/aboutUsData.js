@@ -24,18 +24,22 @@ const aboutUsData = [
 const aboutUsDataNext = [
     {
         title: 'Softeare Development',
+        color: '#FD6509',
         percent: 92
     },
     {
         title: 'Syber Security',
+        color: '#03DEA8',
         percent: 80
     },
     {
         title: 'Artificial Intelligence',
+        color: '#0A99FD',
         percent: 95
     },
     {
         title: 'Web Development',
+        color: '#F00674',
         percent: 78
     },
 ];

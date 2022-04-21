@@ -1,6 +1,7 @@
 // component imports
 import { renderFeatures } from '../components/features/features.js';
 import { aboutUsData, aboutUsDataNext } from '../data/aboutUsData.js';
+import { renderAboutUsBar } from '../components/aboutUsNext/aboutUsNext.js';
 import { servicesData } from '../data/servicesData.js';
 import { whyChooseUs } from '../data/whyChooseUs.js';
 import { renderIconList } from '../components/lets-talk/lets-talk.js';
@@ -8,6 +9,19 @@ import { letstalkData } from '../data/letstalkData.js';
 // components execution
 
 /* header: start */
+
+const mainHeaderDOM = document.querySelector('.main-header');
+
+addEventListener('scroll', function () {
+    const headerPosition = 100;
+    if (scrollY > headerPosition) {
+        mainHeaderDOM.classList.add('header-white');
+    } else {
+        mainHeaderDOM.classList.remove('header-white');
+    }
+})
+
+
 /* header: end */
 
 /* hero: start */
@@ -21,7 +35,7 @@ import { letstalkData } from '../data/letstalkData.js';
 /* about us 1: end */
 
 /* about us 2: start */
-
+    renderAboutUsBar('#bar', aboutUsDataNext);
 /* about us 2: end */
 
 /* services: start */
