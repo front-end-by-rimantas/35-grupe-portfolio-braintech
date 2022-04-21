@@ -539,19 +539,19 @@ h5 {
     font-size: 0;
 }
 
-.flaticon-send img {
-    position: absolute;
-    right: 17px;
-    top: 15px;
-    bottom: 0;
-    height: 25px;
-    width: 25px;
-    filter: invert(100%);
-}
-
-.flaticon-send img:hover {
+.round-btn:hover {
     cursor: pointer;
 }
+
+.flaticon-send i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    bottom: 0;
+    font-size: 20px;
+    color: var(--white);
+}
+
 /* contacts: end */
 
 /* footer: start */
