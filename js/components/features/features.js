@@ -63,7 +63,7 @@ function renderFeatures(selector, data) {
         HTML += `
 
         <div class="col-lg-6 features">
-        <img src="../../../img/why-choose-us/${item.icon}.png" class="ico"></img>
+        <img src="./img/why-choose-us/${item.icon}.png" class="ico"></img>
         
             <div class="ico2">
                 <h3 class="title">${item.title}</h3>
