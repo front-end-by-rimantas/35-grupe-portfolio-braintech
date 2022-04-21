@@ -13,6 +13,7 @@
     line-height: 26px;
     font-weight: 600;
     background: linear-gradient(220deg, #f27c1e 0%, #dd4c23 79%);
+    transition: all 0.4s;
 }
 .get-started-btn:hover {
     background: linear-gradient(180deg, #dd4c23 19%, #f27c1e 100%);
@@ -21,6 +22,7 @@
 @media (max-width: 480px ) {
     .get-started-btn {
     padding: 10px 26px;
+    transition: all 0.4s;
     }
 }
 
