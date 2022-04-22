@@ -41,7 +41,7 @@ const aboutUsDataNext = [
     {
         title: 'Syber Security',
         color: '#03DEA8',
-        percent: 80
+        percent: 70
     },
     {
         title: 'Artificial Intelligence',
