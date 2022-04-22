@@ -15,9 +15,18 @@
     box-shadow: 0px 2px 10px var(--lgray);
 }
 .card > i {
+    font-size:60px;
     display: block;
     margin-top:20px;
     margin-bottom:20px;
+    color:#FC6606;
+}
+.card:hover {
+    background-color: #FC6606;
+    color: whitesmoke; 
+}
+.card:hover > i {
+    color:whitesmoke
 }
 .card > a {
     text-decoration: none;
