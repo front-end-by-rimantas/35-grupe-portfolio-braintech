@@ -1,7 +1,5 @@
 // component imports
 import { renderFeatures } from '../components/features/features.js';
-import { aboutUsData, aboutUsDataNext } from '../data/aboutUsData.js';
-import { servicesData } from '../data/servicesData.js';
 import { whyChooseUs } from '../data/whyChooseUs.js';
 // components execution
 
@@ -46,4 +44,6 @@ import { whyChooseUs } from '../data/whyChooseUs.js';
 /* contacts: end */
 
 /* footer: start */
+import { scroolFuntion } from '../data/footer.js';
+import { topFunction } from '../data/footer.js';
 /* footer: end */
