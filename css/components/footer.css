@@ -1,0 +1,28 @@
+.container-footer {
+    background-color: #F6F7F9;
+}
+.main-footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    gap: 200px !important;
+    font-style: normal !important;
+}
+.copyright {
+    display: flex;
+}
+.i {
+    padding-right: 2px;
+}
+.ul {
+    padding-left: 10px;
+}

@@ -70,18 +70,13 @@ body {
     background-image: var(--background1);
 }
 
-.container bg-background2 footer {
+.container-footer {
     margin: 0;
     padding: 0;
     background-color: var(--background2);
-    opacity: 0.25;
 }
 
-}
 
-.bg-background2 footer {
-    background-color: var(--background2); 
-}
 
 .bg-background3{
     background-image: var(--background3);
