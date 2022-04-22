@@ -1,5 +1,6 @@
 .container-footer {
     background-color: #F6F7F9;
+    padding: 20px;
 }
 .main-footer {
     padding-top: 0px;
@@ -11,18 +12,45 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-decoration: none !important;
 }
 
 .footer-links {
-    gap: 200px !important;
-    font-style: normal !important;
+    display: flex;
+    gap: 20px;
+    font-style: normal;
+    padding: 20px;
 }
 .copyright {
     display: flex;
+    padding: 20px;
+    
 }
 .i {
-    padding-right: 2px;
+    display:flex;
+    padding: 20px;
 }
+.a {
+    padding-left: 20px;
+}
+
 .ul {
-    padding-left: 10px;
+    padding-right: 20px;
 }
+#ToTopBtn {
+    background-image: linear-gradient(160deg, #03228f 0%, #0b70e1 77%);
+    font-size: 30px;
+    color: white;
+    padding: 8px 15px 0px;
+    border-radius: 70px !important;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 60px; /* Place the button at the bottom of the page */
+    right: 45px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none;
+}
+#ToTopBtn:hover {
+    background-color: #0b70e1;
+    background-color: transparent;
+  }

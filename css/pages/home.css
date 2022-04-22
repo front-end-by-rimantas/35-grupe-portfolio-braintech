@@ -357,4 +357,8 @@
 /* contacts: end */
 
 /* footer: start */
+.footer-links {
+    text-decoration: none;
+    color: black;
+}
 /* footer: end */
