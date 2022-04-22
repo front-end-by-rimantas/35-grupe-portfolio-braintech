@@ -6,6 +6,8 @@ import { servicesData } from '../data/servicesData.js';
 import { whyChooseUs } from '../data/whyChooseUs.js';
 import { renderIconList } from '../components/lets-talk/lets-talk.js';
 import { letstalkData } from '../data/letstalkData.js';
+import { renderBlogs } from '../components/blogs/blogs.js';
+import { blogsData } from '../data/blogsData.js';
 // components execution
 
 /* header: start */
@@ -54,6 +56,7 @@ addEventListener('scroll', function () {
 /* let's talk: end */
 
 /* blogs: start */
+renderBlogs('#blogs_container', blogsData);
 /* blogs: end */
 
 /* testimonials: start */ 
