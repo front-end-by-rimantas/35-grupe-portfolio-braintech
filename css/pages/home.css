@@ -83,13 +83,19 @@
 /* companies1: end */
 
 /* about us 1: start */
+.happy-clients{
+    display: inline-block;
+    width: 100%;
+}
+
 .statistic {
     display: inline-block;
+    width: 49%;
 }
 .statisticX {
-    float: right;
-    flex-direction: row;
     display: inline-block;
+    width:50%;
+
 }
 .numX{
 

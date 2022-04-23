@@ -14,6 +14,5 @@ function aboutUs(selector, data) {
     }
 
     DOM.innerHTML= HTML;
-    console.log(HTML);
 }
 export { aboutUs };

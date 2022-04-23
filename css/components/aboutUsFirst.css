@@ -18,7 +18,7 @@
     font-size:60px;
     display: block;
     margin-top:20px;
-    margin-bottom:20px;
+    margin-bottom:40px;
     
 }
 .card:hover {
@@ -38,4 +38,8 @@
 }
 .card > p {
     display: block;
+    line-height: 2em;
+    
+    margin-bottom: 40px;
+    
 }
