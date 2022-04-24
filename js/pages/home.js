@@ -56,7 +56,7 @@ addEventListener('scroll', function () {
 /* let's talk: end */
 
 /* blogs: start */
-renderBlogs('#blogs_container', blogsData);
+    renderBlogs('#blogs_container', blogsData);
 /* blogs: end */
 
 /* testimonials: start */ 
