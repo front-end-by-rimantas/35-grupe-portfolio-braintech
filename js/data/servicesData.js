@@ -1,33 +1,39 @@
 const servicesData = [
     {
-        icon: 'lamp',
+        icon: 'lightbulb-o',
         title: 'Software Development',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?'
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?',
+        colorFront: '#FA670D'
     },
     {
-        icon: 'curves',
+        icon: 'database',
         title: 'Web development',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?'
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?',
+        colorFront: '#F74759'
     },
     {
-        icon: 'analysis',
+        icon: 'area-chart',
         title: 'Analytic Solutions',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?'
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?',
+        colorFront: '#1FD7E7'
     },
     {
-        icon: 'ruler',
+        icon: 'cloud',
         title: 'Cloud & DevOps',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?'
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?',
+        colorFront: '#0EDFAC'
     },
     {
-        icon: 'document',
+        icon: 'list-ul',
         title: 'Product & Design',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?'
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?',
+        colorFront: '#780FDA'
     },
     {
         icon: 'gear',
         title: 'Data Center',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?'
+        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?',
+        colorFront: '#149DFD'
     }
 ];
 
