@@ -85,6 +85,36 @@
 /* companies1: end */
 
 /* about us 1: start */
+.happy-clients{
+    display: inline-block;
+    width: 100%;
+}
+
+.statistic {
+    display: inline-block;
+    width: 49%;
+}
+.statisticX {
+    display: inline-block;
+    width:50%;
+
+}
+.numX{
+
+    color:#03228f;
+    font-size:45px;
+    display: block;
+}
+.num {
+    color: var(--red);
+    font-size:45px;
+    display: block;
+}
+.txt {
+    display: inline;
+    font-size: 17px;
+    font-weight:600;
+}
 /* about us 1: end */
 
 /* about us 2: start */
