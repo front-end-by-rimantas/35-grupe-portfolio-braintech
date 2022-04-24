@@ -1,27 +1,29 @@
 .blog-item{
-    position: relative;
     padding: 20px;
     padding-bottom: 40px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 6px 20px rgb(220,220,220);
+    position: relative;
 
 }
 
-.blog-image{
-    height: 300px;
+.blog-item .blog-image{
+    max-width: 100%;
+    height: auto;
     margin-bottom: 30px;
 }
 
-.blog-btn{
+.blog-item .blog-btn{
     position:absolute;
     right: 30px;
     top: 260px;
+   
 }
-.blog-content{
+.blog-item .blog-content{
     margin-left:10px;
 }
-.blog-meta{
+.blog-item .blog-content .blog-meta{
     display: flex;
     list-style-type: none; 
     margin-bottom: 20px;
