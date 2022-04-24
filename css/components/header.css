@@ -273,3 +273,54 @@
     line-height: 36px;
     font-size: 14px;
 }
+
+.ham-list {
+    position: relative;
+    margin-top: 50px;
+    background-color: var(--white);
+}
+
+.btn-angle {
+    float: right;
+    background-color: var(--lgray);
+    height: 50px;
+    width: 45px;
+}
+
+.ham-listdropdown i {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.ham-list > .ham-listdrop > .ham-listdropdown > li {
+    list-style: none;
+    border-bottom: 1px solid black;
+    padding: 15px 20px;
+    line-height: 20px;
+}
+
+.ham-list > .ham-listdrop > li:last-child {
+    border-bottom: none;
+}
+
+.ham-list > .ham-listdrop > .ham-listdropdown > li a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.ham-list > .ham-listdrop > .ham-listdropdown:first-child > li a {
+    position: relative;
+    color: #106eea;
+}
+
+.ham-list > .ham-listdrop > .ham-listdropdown:hover > li a {
+    position: relative;
+    color: #106eea;
+}
+
+.ham-list > .ham-listdrop:hover {
+    cursor: pointer;
+}
