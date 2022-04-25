@@ -191,6 +191,10 @@
     color: var(--white);
 }
 
+.hamburger i:hover {
+    color: var(--lgray);
+}
+
 .nav-listdrop {
     display: none;
 }
