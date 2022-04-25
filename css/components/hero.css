@@ -1,0 +1,102 @@
+
+.hero-row {
+    position: relative;
+}
+
+.hero-block {
+    margin-top: 280px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.play-link {
+    position: absolute;
+    top: -110px;
+    left: 10px;
+}
+.play-circle {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 80px;
+    height: 80px;
+    font-size: 25px;
+    color: #03228f;
+    line-height: 60px;
+    text-align: center;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+.around-circle {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    animation-name: circleMove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circleMove {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        height: 180px;
+        width: 180px;
+        transform: translate(-30%, -35%);
+        opacity: 0;
+    }
+}
+
+.fa-play-circle{
+    text-shadow: none;
+    color: #ffffff;
+    position:absolute;
+    top: -110px;
+    left: 10px;
+}
+
+.hero-title{
+    font-size: 42px;
+    line-height: 59px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    transition: all 0.4s;
+}
+@media (max-width: 480px ) {
+    .hero-title {
+        font-size: 25px;
+        line-height: 41px;
+        transition: all 0.4s;
+    }
+}
+.hero-p{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 35px
+}
+@media (max-width: 480px ) {
+    .hero-p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+.hero-img{
+    width: 590px;
+    bottom: 450px;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+}
+@media (min-width: 1440px ) {
+    .hero-img {
+        width: 700px;
+        bottom: 25px;
+    }
+}
