@@ -186,6 +186,11 @@
     margin-top: 5px;
 }
 
+.hamburger i {
+    font-size: 24px;
+    color: var(--white);
+}
+
 .nav-listdrop {
     display: none;
 }
@@ -275,9 +280,14 @@
 }
 
 .ham-list {
+    display: none;
     position: relative;
     margin-top: 20px;
     background-color: var(--white);
+}
+
+.show {
+    display: block;
 }
 
 .btn-angle {
