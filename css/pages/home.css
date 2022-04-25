@@ -28,8 +28,8 @@
     position: relative;
 }
 .hero-block {
-    margin-top: 380px;
-    margin-bottom: 110px;
+    margin-top: 280px;
+    margin-bottom: 100px;
     position: relative;
 }
 .fa-play-circle{
@@ -72,10 +72,11 @@
     bottom: 450px;
     position: absolute;
     bottom: 100px;
+    right: 0;
 }
 @media (min-width: 1440px ) {
     .hero-img {
-        width: 900px;
+        width: 700px;
         bottom: 25px;
     }
 }
