@@ -13,6 +13,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/pages/home.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <!-- analytics -->
   </head>
@@ -551,24 +552,33 @@
     <!-- contacts: end -->
 
     <!-- footer: start -->
-    <footer class="container bg-background2 footer">
-      <div class="row">
+    <footer class="container-footer">
+      <div id="footer-row" class="row">
         <div class="copyright">
-          <i>icon</i>
-          2021 All Rights Reserved. Developed By
-          <ul>
-            <a href="#">RSTheme</a>
+          &copy
+          2021 All Rights Reserved. Developed By 
+          <ul class="RSThemeLink">
+            <a class="footer-links" href="#">RSTheme</a>
           </ul>
         </div>
-        <div class="footer-links">
-          <a href="#">Home</a>  
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Shop</a>
-          <a href="#">FAQs</a>
-        </div>
+        <nav class="footer-menu">
+          <a class="footer-links" href="#">Home</a>  
+          <small><i class="fa fa-circle icon-color" aria-hidden="true"></i></small>
+          <a class="footer-links" href="#">About</a>
+          <small><i class="fa fa-circle icon-color" aria-hidden="true"></i></small>
+          <a class="footer-links" href="#">Blog</a>
+          <small><i class="fa fa-circle icon-color" aria-hidden="true"></i></small>
+          <a class="footer-links" href="#">Shop</a>
+          <small><i class="fa fa-circle icon-color" aria-hidden="true"></i></small>
+          <a class="footer-links" href="#">FAQs</a>
+        </nav>
       </div>
     </footer>
+    <button onclick="topFunction()" id="ToTopBtn" title="Go to top">
+      ^
+    </button>
+    <script src="./js/data/footer.js"></script>
+
     <!-- footer: end -->
 
     <script src="./js/pages/home.js" type="module" defer></script>
