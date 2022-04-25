@@ -10,6 +10,8 @@ import { renderIconList } from '../components/lets-talk/lets-talk.js';
 import { letstalkData } from '../data/letstalkData.js';
 import { renderBlogs } from '../components/blogs/blogs.js';
 import { blogsData } from '../data/blogsData.js';
+import { renderPartners } from '../components/partners/partners.js';
+import { partnersData } from '../data/partnersData.js';
 // components execution
 
 /* header: start */
@@ -32,6 +34,7 @@ addEventListener('scroll', function () {
 /* hero: end */
 
 /* companies1: start */
+    renderPartners('#partners_container', partnersData);
 /* companies1: end */
 
 /* about us 1: start */
