@@ -1,4 +1,6 @@
-function renderFeatures(selector, data) {
+
+
+function renderIconList(selector, data) {
     const mandatoryObjKeys = ['title', 'desc'];
     const optionalObjKeys = ['icon'];
     const allObjKeys = [...mandatoryObjKeys, ...optionalObjKeys];
@@ -61,16 +63,14 @@ function renderFeatures(selector, data) {
         }   
 
         HTML += `
-
-        <div class="col-lg-6 features">
-        <img src="./img/why-choose-us/${item.icon}.png" class="ico"></img>
-        
-            <div class="ico2">
-                <h3 class="title">${item.title}</h3>
-                <p class="description">${item.desc}</p>
-            </div>
+        <div class="col-lg-6 lt-info">
+        <img src="./img/lets-talk/${item.icon}.png" class="lt-ico"></img>
+        <div class="lt-text">
+        <a class="lt-link" href="#">${item.title}</a>
+        <p class="description lt-description">${item.desc}</p>
         </div>
-        `;
+        </div>`
+    ;
     }
 
     if(HTML === '') {
@@ -83,4 +83,5 @@ function renderFeatures(selector, data) {
     
 }
 
-export { renderFeatures };
+export { renderIconList };
+

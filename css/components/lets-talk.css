@@ -1,0 +1,35 @@
+.lt-info{
+    display: flex;
+    margin-top: 30px;
+}
+
+.lt-ico{
+    display: inline;
+    margin-top: 10px;
+    height: 55px;
+    margin-right: 20px;
+}
+
+.lt-info .lt-text{
+    margin-top: 7px;
+}
+
+.lt-info .lt-text .lt-link{
+    font-size: 20px;
+    color: #0a0a0a;
+    font-weight: 600;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.lt-info .lt-text .lt-link:hover{
+color: #106eea;
+transition: all 0.3s
+}
+
+.lt-info .lt-text .lt-description{
+    padding: 20px 0px 0px 0px;
+    font-size: 16px;
+    color: #454545;
+    font-weight: 400;
+}

@@ -12,7 +12,7 @@
     <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="./css/pages/home.css" />
+    <link rel="stylesheet" href="./css/pages/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <!-- analytics -->
   </head>
@@ -21,10 +21,11 @@
     <!-- 3rd-party: FB -->
 
     <!-- header: start -->
-    <header class="container bg-background1">
+    <header class="container main-header">
       <div class="row">
-        <div class="col-12 header">
-          <img src="./img/header/logo-light.png" alt="Logo" class="logo-header">
+        <div class="col-12">
+          <img src="./img/header/logo-light.png" alt="Logo" class="logo-white">
+          <img src="./img/header/logo-dark.png" alt="Logo" class="logo-dark">
           <nav class="hidden visible-lg navigation">
             <ul class="nav-list"><a href="#">Home</a>
               <ul class="nav-listdrop">
@@ -128,9 +129,9 @@
     <!-- header: end -->
 
     <!-- hero: start -->
-    <section class="hero-sec container bg-background1">
-      <div class="row">
-        <div class="col-12 col-lg-6">
+    <section class="container bg-background1">
+      <div class="row hero-row">
+        <div class="hero-block col-12 col-lg-6">
           <div>
             <a class="play-link" href="https://www.youtube.com/watch?v=YLN1Argi7ik">
             <i class="fa fa-play-circle fa-5x"></i>
@@ -191,7 +192,7 @@
     <!-- about us 1: start -->
     <section class="container bg-background2">
       <div class="row">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-5">
           <h4 class="section-title">About us</h4>
           <h1 class="section-header">Over 25+ Years Helping Brands to Reach Full Potential</h1>
           <p class="section-p">
@@ -202,39 +203,30 @@
             for the standard lorem ipsum passage vary, with some citing the 15th
             century
           </p>
-          <div>
-            <p>450+</p>
-            <p>Happy Clients</p>
-          </div>
-          <div>
-            <p>750+</p>
-            <p>Project Delivered</p>
-          </div>
+            <div class="happy-clients">
+              <div class="statistic">
+                <h1 class="num">450+</h1>
+                <p class="txt">Happy Clients</p>
+              </div>
+              <div class="statisticX">
+                <h1 class="numX">750+</h1>
+                <p class="txt">Project Delivered</p>
+              </div>
+            </div>    
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div>
-            <i>ICON</i>
-            <a href="#">High-quality Code</a>
-            <p>At vero eos et accusamus etiusto odio praesentium accusamus.</p>
-          </div>
-          <div>
-            <i>ICON</i>
-            <a href="#">Full-stack teams</a>
-            <p>At vero eos et accusamus etiusto odio praesentium accusamus.</p>
-          </div>
+
+        <div class="col-lg-7 cards">
+
+            <div class="blockOne">
+              <div id="aboutA"></div>
+            </div>
+
+            <div class="blockTwo">
+              <div id="aboutB"></div>
+            </div>
+
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <div>
-            <i>ICON</i>
-            <a href="#">Agile Approach</a>
-            <p>At vero eos et accusamus etiusto odio praesentium accusamus.</p>
-          </div>
-          <div>
-            <i>ICON</i>
-            <a href="#">High-quality Code</a>
-            <p>At vero eos et accusamus etiusto odio praesentium accusamus.</p>
-          </div>
-        </div>
+
       </div>
     </section>
     <!-- about us 1: end -->
@@ -252,29 +244,7 @@
             Over 25 years working in IT services developing software
             applications and mobile apps for clients all over the world.
           </p>
-          <div class="bar-chart">
-            <div class="bar">
-              <span class="barname">Software Development</span>
-              <span class="barpercent">92%</span>
-              <p>------------------------------</p>
-            </div>
-            <div class="bar">
-              <span class="barname">Cyber Security</span>
-              <span class="barpercent">80%</span>
-              <p>------------------------------</p>
-            </div>
-            <div class="bar">
-              <span class="barname">Artificial Intelligence</span>
-              <span class="barpercent">95%</span>
-              <p>------------------------------</p>
-            </div>
-            <div class="bar">
-              <span class="barname">Web Developement</span>
-              <span class="barpercent">78%</span>
-              <p>------------------------------</p>
-            </div>
-          </div>
-
+          <div id="bar"></div>
           <a href="#" class="btn get-started-btn">Get Started</a>
         </div>
       </div>
@@ -291,56 +261,9 @@
           </div>
       </div>
       <div class="row">
-          <div class="services-col col-12 col-md-6 col-lg-4">
-              <div class="services-icon">
-                <img src="./img/services/1.png" alt="Lampy">
-                <div class="services-number"><span>1</span></div>
-              </div>
-              <a href="#">Software Development</a>
-              <p>At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center for managing database.</p>
+        <div id="services"></div>
       </div>
-          <div class="services-col col-12 col-md-6 col-lg-4">
-              <div class="services-icon">
-                <img src="./img/services/2.png" alt="Pen">
-                <div class="services-number"><span>2</span></div>     
-              </div>  
-              <a href="#">Web Development</a>
-              <p>At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center for managing database.</p>
-          </div>
-          <div class="services-col col-12 col-md-6 col-lg-4">
-              <div class="services-icon">
-                <img src="./img/services/3.png" alt="Up">
-                <div class="services-number"><span>3</span></div>   
-              </div>           
-              <a href="#">Analytic Solutions</a>
-              <p>At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center for managing database.</p>
-          </div>     
-          <div class="services-col col-12 col-md-6 col-lg-4">
-              <div class="services-icon">
-                <img src="./img/services/4.png" alt="Lining">
-                <div class="services-number"><span>4</span></div>   
-              </div>            
-              <a href="#">Cloud & DevOps</a>
-              <p>At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center for managing database.</p>
-          </div> 
-          <div class="services-col col-12 col-md-6 col-lg-4">
-              <div class="services-icon">
-                <img src="./img/services/5.png" alt="Sheet">
-                <div class="services-number"><span>5</span></div>   
-              </div>            
-              <a href="#">Product & Design</a>
-              <p>At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center for managing database.</p>
-          </div> 
-          <div class="services-col col-12 col-md-6 col-lg-4">
-              <div class="services-icon">
-                <img src="./img/services/6.png" alt="Settings">
-                <div class="services-number"><span>6</span></div>   
-              </div>            
-              <a href="#">Data Center</a>
-              <p>At vero eos et accusamus etiusto odio praesentium accusamus etiusto odio data center for managing database.</p>
-          </div>
-      </div>
-  </section>
+    </section>
 
     <!-- services: end -->
 
@@ -381,23 +304,8 @@
             From its medieval origins to the digital era, learn everything there
             is to know about the ubiquitous lorem ipsum passage.
           </p>
-          <ul>
-            <li>
-              <i>icon</i>
-              <a href="#">Email</a>
-              <p>support@rstheme.com</p>
-            </li>
-            <li>
-              <i>icon</i>
-              <a href="#">Call us</a>
-              <p>(+01) 555 - 9811 - 444</p>
-            </li>
-            <li>
-              <i>icon</i>
-              <a href="#">Office address</a>
-              <p>374 FA Tower, William S Blvd 2721, IL, USA</p>
-            </li>
-          </ul>
+          <div id="letstalk_container"></div>
+          
         </div>
         <div class="col-12 col-lg-4 ml-lg-1">
           <form class="form">
@@ -461,10 +369,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12">SLIDER
-          <a href="#" class="link btn blue-btn">Web Development</a>
-        </div>
-      </div>
+      <div id="blogs_container"></div>
+    </div>
+    
     </section>
     <!-- blogs: end -->
 
