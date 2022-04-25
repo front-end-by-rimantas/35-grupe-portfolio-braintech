@@ -15,17 +15,26 @@
     text-decoration: none !important;
 }
 
-.footer-links {
+.footer-menu {
     display: flex;
     gap: 20px;
     font-style: normal;
     padding: 20px;
 }
+
+.footer-links:hover {
+    color:#0b70e1;
+}
 .copyright {
     display: flex;
-    padding: 20px;
-    
+    justify-content: flex-start;
+    padding: 20px;  
 }
+
+.RSThemeLink {
+    margin-left: 4px;
+}
+
 .i {
     display:flex;
     padding: 20px;
@@ -53,4 +62,12 @@
 #ToTopBtn:hover {
     background-color: #0b70e1;
     background-color: transparent;
+  }
+
+  .icon-color {
+      color: #0b70e1;
+  }
+  .fa {
+      font-size: 8px !important;
+      margin-top: 6px;
   }
