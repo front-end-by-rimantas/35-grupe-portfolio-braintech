@@ -4,6 +4,7 @@ import { aboutUsA, aboutUsB, aboutUsDataNext } from '../data/aboutUsData.js';
 import { renderAboutUsBar } from '../components/aboutUsNext/aboutUsNext.js';
 import { aboutUs } from '../components/aboutUsNext/aboutUs.js';
 import { servicesData } from '../data/servicesData.js';
+import { services } from '../components/services/services.js';
 import { whyChooseUs } from '../data/whyChooseUs.js';
 import { renderIconList } from '../components/lets-talk/lets-talk.js';
 import { letstalkData } from '../data/letstalkData.js';
@@ -43,7 +44,7 @@ addEventListener('scroll', function () {
 /* about us 2: end */
 
 /* services: start */
-
+    services('#services', servicesData);
 /* services: end */
 
 /* why choose us: start */

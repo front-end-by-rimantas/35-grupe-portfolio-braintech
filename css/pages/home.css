@@ -13,6 +13,7 @@
 @import '../components/header.css';
 @import '../components/lets-talk.css';
 @import '../components/blogs.css';
+@import '../components/services.css';
 
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
@@ -23,11 +24,14 @@
 /* header: end */
 /* hero: start */
 
-.hero-block {
-    margin-top: 100px;
+.hero-row {
     position: relative;
 }
-
+.hero-block {
+    margin-top: 280px;
+    margin-bottom: 100px;
+    position: relative;
+}
 .fa-play-circle{
     text-shadow: none;
     color: #ffffff;
@@ -35,7 +39,6 @@
     top: -110px;
     left: 10px;
 }
-
 .hero-title{
     font-size: 42px;
     line-height: 59px;
@@ -51,7 +54,6 @@
         transition: all 0.4s;
     }
 }
-
 .hero-p{
     font-size: 20px;
     line-height: 34px;
@@ -65,16 +67,17 @@
         line-height: 25px;
     }
 }
-
 .hero-img{
     width: 590px;
-    
+    bottom: 450px;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
 }
 @media (min-width: 1440px ) {
     .hero-img {
-        width: 900px;
-        position: absolute;
-        top: 200px;
+        width: 700px;
+        bottom: 25px;
     }
 }
 /* hero: end */
@@ -141,30 +144,6 @@
 /* about us 2: end */
 
 /* services: start */
-.services-col * img {
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    background-color: var(--orange);
-    box-sizing: border-box;
-}
-.services-icon {
-    width: 270px;
-}
-.services-number {
-    font-size: 60px;
-    color: grey;
-    float: right;
-}
-.services-col > a {
-    display: inline-block;
-    margin-bottom: 13px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    color: black;
-}
 /* services: end */
 
 /* why choose us: start */
