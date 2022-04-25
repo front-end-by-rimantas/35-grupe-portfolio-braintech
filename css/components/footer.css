@@ -1,0 +1,79 @@
+.container-footer {
+    background-color: #F6F7F9 !important;
+    height: 80px;
+}
+.main-footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: fixed;
+    bottom: 0;
+    left: 280px;
+    right: 280px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none !important;
+    background-color:transparent;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 20px;
+    font-style: normal;
+    padding: 20px;
+}
+}
+
+.footer-links:hover {
+    color:#0b70e1;
+}
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;  
+}
+
+.RSThemeLink {
+    margin-left: 4px;
+    display:flex;
+    align-items: center;
+}
+
+.i {
+    display:flex;
+    padding: 20px;
+}
+.a {
+    padding-left: 20px;
+}
+
+.ul {
+    padding-right: 20px;
+}
+#ToTopBtn {
+    background-image: linear-gradient(160deg, #03228f 0%, #0b70e1 77%);
+    font-size: 30px;
+    color: white;
+    padding: 8px 15px 0px;
+    border-radius: 70px !important;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 60px; /* Place the button at the bottom of the page */
+    right: 45px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none;
+}
+#ToTopBtn:hover {
+    background-color: #0b70e1;
+    background-color: transparent;
+  }
+
+  .icon-color {
+      color: #0b70e1;
+  }
+  .fa {
+      font-size: 8px !important;
+      margin-top: 6px;
+  }
+
