@@ -12,6 +12,8 @@ import { renderBlogs } from '../components/blogs/blogs.js';
 import { blogsData } from '../data/blogsData.js';
 import { renderPartners } from '../components/partners/partners.js';
 import { partnersData } from '../data/partnersData.js';
+import { renderPartners2 } from '../components/partners/partners2.js';
+import { partnersData2 } from '../data/partnersData2.js';
 // components execution
 
 /* header: start */
@@ -69,6 +71,7 @@ addEventListener('scroll', function () {
 /* testimonials: end */
 
 /* companies2: start */
+renderPartners2('#partners2_container', partnersData2);
 /* companies2: end */
 
 /* contacts: start */
