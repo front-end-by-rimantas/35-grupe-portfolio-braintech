@@ -1,40 +1,33 @@
 const partnersData=[
     {
-        icon: '1',
+        logo: '1',
     
     },
     {
-        icon: '2',
+        logo: '3',
     
     },
     {
-        icon: '3',
+        logo: '4',
     
     },
     {
-        icon: '4',
+        logo: '5',
     
     },
     {
-        icon: '5',
+        logo: '6',
     
     },
+    
     {
-        icon: '6',
+        logo: '7',
     
-    },
+    },/*
     {
-        icon: '7',
+        logo: '8',
     
-    },
-    {
-        icon: '8',
-    
-    },
-    {
-        icon: '9',
-    
-    },
+    },*/
 
 
  ];
