@@ -48,6 +48,7 @@ transition: all 0.3s
     left: 0;
     right: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 .all-lines > .line {
@@ -64,18 +65,16 @@ transition: all 0.3s
     background-image: linear-gradient(white, #106eea);
     animation-name: lineFall-1;
     animation-delay: 2s;
-    animation-duration: 8s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 @keyframes lineFall-1 {
     0% {
-        opacity: 1;
         top: 0;
     }
     100% {
-        opacity: 1;
         top: 100%;
     }
 }
@@ -87,18 +86,16 @@ transition: all 0.3s
     height: 50px;
     background-image: linear-gradient(white, #106eea);
     animation-name: lineFall-2;
-    animation-duration: 8s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;   
 }
 
 @keyframes lineFall-2 {
     0% {
-        opacity: 1;
         top: 0;
     }
     100% {
-        opacity: 1;
         top: 100%;
     }
 }
