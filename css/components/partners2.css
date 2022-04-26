@@ -1,0 +1,16 @@
+
+.partner-logo2{
+    width:210px;
+    filter: grayscale(100%);
+    position: relative;
+    
+}
+
+.partner-logo-hover{
+    width:210px;
+    position :absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+
+}
