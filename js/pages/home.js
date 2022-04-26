@@ -24,8 +24,9 @@ addEventListener('scroll', function () {
     } else {
         mainHeaderDOM.classList.remove('header-white');
     }
-})
-    search();
+});
+   let searchDOM = document.querySelector('.searchbox');
+   search(searchDOM);
 /* header: end */
 
 /* hero: start */
