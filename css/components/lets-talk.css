@@ -33,3 +33,74 @@ transition: all 0.3s
     color: #454545;
     font-weight: 400;
 }
+
+.bg-background2 {
+    position: relative;
+}
+
+.all-lines {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 19px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.all-lines > .line {
+    width: 2px;
+    height: 100%;
+    background-color: white;
+}
+
+.falling-line-1 {
+    position: absolute;
+    top: -100px;
+    width: 3px;
+    height: 50px;
+    background-image: linear-gradient(white, #106eea);
+    animation-name: lineFall-1;
+    animation-delay: 2s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes lineFall-1 {
+    0% {
+        opacity: 1;
+        top: 0;
+    }
+    100% {
+        opacity: 1;
+        top: 100%;
+    }
+}
+
+.falling-line-2 {
+    position: absolute;
+    top: -100px;
+    width: 3px;
+    height: 50px;
+    background-image: linear-gradient(white, #106eea);
+    animation-name: lineFall-2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;   
+}
+
+@keyframes lineFall-2 {
+    0% {
+        opacity: 1;
+        top: 0;
+    }
+    100% {
+        opacity: 1;
+        top: 100%;
+    }
+}
+
+
