@@ -25,8 +25,23 @@ addEventListener('scroll', function () {
         mainHeaderDOM.classList.remove('header-white');
     }
 });
-   let searchDOM = document.querySelector('.searchbox');
-   search(searchDOM);
+addEventListener('click', function(){
+       const searchDOM = document.querySelector('#search');
+       
+       if(searchDOM.click){
+           searchDOM.querySelector('.searchbox').style.left = "0%";
+        }
+    });
+    
+/*     addEventListener('click', function(){
+        const searchDOM = document.querySelector('#search');
+        const searchX = document.querySelector('#x');
+        
+    if(searchX.click){
+     searchDOM.querySelector('.searchbox').style.left = "100%";
+    }
+}); */
+
 /* header: end */
 
 /* hero: start */

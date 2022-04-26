@@ -1,27 +1,8 @@
 
 
-function search(f) {
-
-        
-
-        
-
-                f.addEventListener('click', style(f));
-
-
-
-        
-
-
-
-
-}
-
-function style(a){
-        
-        if(a.clicked === true){
-                a.style.left = "20%";
-
-        }
+function search(selector) {
+        const DOM = document.querySelectorAll(selector);
+        selector.addEventListener('click', DOM.querySelector('.searchbox').style.left = "40%");
+        console.log(DOM);
 }
 export { search };
