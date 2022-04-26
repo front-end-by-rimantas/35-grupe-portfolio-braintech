@@ -5,13 +5,19 @@
     border-radius: 10px;
     box-shadow: 0 6px 20px rgb(220,220,220);
     position: relative;
+    transition: all 0.5s;
 
 }
 
+.blog-item:hover{
+    transform: translateY(-15px);
+}
+
 .blog-item .blog-image{
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 290px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .blog-item .blog-btn{
