@@ -9,6 +9,7 @@ import { whyChooseUs } from '../data/whyChooseUs.js';
 import { renderIconList } from '../components/lets-talk/lets-talk.js';
 import { letstalkData } from '../data/letstalkData.js';
 import { renderBlogs } from '../components/blogs/blogs.js';
+import { search } from '../components/search/search.js';
 import { blogsData } from '../data/blogsData.js';
 import { renderPartners } from '../components/partners/partners.js';
 import { partnersData } from '../data/partnersData.js';
@@ -27,6 +28,25 @@ addEventListener('scroll', function () {
     } else {
         mainHeaderDOM.classList.remove('header-white');
     }
+
+});
+addEventListener('click', function(){
+       const searchDOM = document.querySelector('#search');
+       
+       if(searchDOM.click){
+           searchDOM.querySelector('.searchbox').style.left = "0%";
+        }
+    });
+    
+/*     addEventListener('click', function(){
+        const searchDOM = document.querySelector('#search');
+        const searchX = document.querySelector('#x');
+        
+    if(searchX.click){
+     searchDOM.querySelector('.searchbox').style.left = "100%";
+    }
+}); */
+
 })
 
 document.getElementById("myBtn").onclick = function() {myFunction()};
@@ -34,6 +54,7 @@ document.getElementById("myBtn").onclick = function() {myFunction()};
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
+
 
 /* header: end */
 
