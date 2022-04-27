@@ -47,8 +47,6 @@ addEventListener('click', function(){
     }
 }); */
 
-})
-
 document.getElementById("myBtn").onclick = function() {myFunction()};
 
 function myFunction() {
