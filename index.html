@@ -13,6 +13,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/pages/home.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <!-- analytics -->
   </head>
@@ -125,9 +126,38 @@
               
             </a>
           </div>
-          <a href="#" class="visible-sm hidden-lg side-icon hamburger">
-            <i class="fa fa-bars"></i>
-          </a>
+          <div class="visible-sm hidden-lg side-icon hamburger">
+            <a href="#" id="myBtn"><i class="fa fa-bars"></i></a>
+          </div>
+        </div>
+        <div class="visible-sm col-12 hidden-lg">
+          <div id="myDropdown" class="ham-list">
+            <div class="ham-listdrop">
+              <div class="ham-listdropdown">
+                <div class="btn-angle"><i class="fa fa-angle-down"></i></div>
+                <li><a href="#">Home</a></li>
+              </div>
+              <div class="ham-listdropdown">
+                <li><a href="#">About</a></li>
+              </div>
+              <div class="ham-listdropdown">
+                <div class="btn-angle"><i class="fa fa-angle-down"></i></div>
+                <li><a href="#">Services</a></li>
+              </div>
+              <div class="ham-listdropdown">
+                <div class="btn-angle"><i class="fa fa-angle-down"></i></div>
+                <li><a href="#">Pages</a></li>
+              </div>
+              <div class="ham-listdropdown">
+                <div class="btn-angle"><i class="fa fa-angle-down"></i></div>
+                <li><a href="#">Blog</a></li>
+              </div>
+              <div class="ham-listdropdown">
+                <li><a href="#">Contact</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </header>
@@ -139,8 +169,10 @@
         <div class="hero-block col-12 col-lg-6">
           <div>
             <a class="play-link" href="https://www.youtube.com/watch?v=YLN1Argi7ik">
-            <i class="fa fa-play-circle fa-5x"></i>
-          </a>
+            <!-- <i class="play-circle fa fa-play-circle fa-2x"></i> -->
+            <div class="around-circle"></div>     
+            <div class="play-circle">&#x25B6;</div>
+            </a>
           </div>
           <h1 class="hero-title">We Are Digital Agency & Technology Solution</h1>
           <p class="hero-p">
@@ -152,46 +184,18 @@
         <div class="hidden visible-lg col-lg-6">
           <img class="hero-img" src="./img/hero/banner-4.png" alt="mainbanner">
         </div>
-        <div class="active-lines">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
       </div>
     </section>
 
     <!-- hero: end -->
 
     <!-- companies1: start -->
-    <section class="container">
+    <section class="container companies">
       <div class="row">
-        <div class="col-6 col-md-4 col-lg-3 ml-xl-1 col-xl-2">
-          <a class="partner-link" href="#"
-            ><img class="partner-logo" src="./img/companies/partners1/1 (1).png" alt="Partner Logo"
-          /></a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-          <a class="partner-link" href="#"
-            ><img class="partner-logo" src="./img/companies/partners1/2 (1).png" alt="Partner Logo"
-          /></a>
-        </div>
-        <div class="hidden visible-md col-md-4 col-lg-3 col-xl-2">
-          <a class="partner-link" href="#"
-            ><img class="partner-logo" src="./img/companies/partners1/3 (1).png" alt="Partner Logo"
-          /></a>
-        </div>
-        <div class="hidden visible-lg col-lg-3 col-xl-2">
-          <a class="partner-link" href="#"
-            ><img class="partner-logo" src="./img/companies/partners1/4 (1).png" alt="Partner Logo"
-          /></a>
-        </div>
-        <div class="hidden visible-xl col-xl-2">
-          <a class="partner-link" href="#"
-            ><img class="partner-logo" src="./img/companies/partners1/5 (1).png" alt="Partner Logo"
-          /></a>
-        </div>
+       <div id="partners_container"></div>
       </div>
     </section>
+      
     <!-- companies1: end -->
 
     <!-- about us 1: start -->
@@ -259,11 +263,13 @@
     <!-- services: start -->
     <section class="container bg-background2">
       <div class="row">
-          <div class="col-12 col-md-10 col-lg-6">
-              <h4 class="section-title">Services</h1>
-              <h1 class="section-header">What Solutions We Provide to Our Valued Customers</h1>
-              <a href="#" class="link btn get-started-btn">Get Started</a>
-          </div>
+        <div class="column-service visible-grid-sm col-12 col-lg-6">
+          <h4 class="section-title">Services</h1>
+            <h1 class="section-header">What Solutions We Provide to Our Valued Customers</h1>
+        </div>
+        <div class="btn-services">
+          <a href="#" class="link btn get-started-btn">Get Started</a>
+        </div>
       </div>
       <div class="row">
         <div id="services"></div>
@@ -301,6 +307,17 @@
 
     <!-- let's talk: start -->
     <section class="container bg-background2">
+      <div class="all-lines">
+        <div class="line">
+          <div class="falling-line-1"></div>
+        </div>
+        <div class="line">
+          <div class="falling-line-2"></div>
+        </div>
+        <div class="line">
+          <div class="falling-line-1"></div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-12 col-lg-7">
           <h4 class="section-title">Let's talk</h4>
@@ -327,8 +344,8 @@
             </div>
             <div class="form-row">
               <input
-                id="username"
-                type="text"
+                id="email"
+                type="email"
                 class="input"
                 placeholder="E-mail"
                 required
@@ -336,8 +353,8 @@
             </div>
             <div class="form-row">
               <input
-                id="username"
-                type="text"
+                id="tel"
+                type="tel"
                 class="input"
                 placeholder="Your number"
                 required
@@ -345,11 +362,10 @@
             </div>
             <div class="form-row">
               <input
-                id="username"
-                type="text"
+                id="website"
+                type="url"
                 class="input"
                 placeholder="Your Website"
-                required
               />
             </div>
             <div class="form-row">
@@ -382,13 +398,23 @@
 
     <!-- testimonials: start -->
     <div class="container bg-background2">
+      <div class="all-lines">
+        <div class="line">
+          <div class="falling-line-1"></div>
+        </div>
+        <div class="line">
+          <div class="falling-line-2"></div>
+        </div>
+        <div class="line">
+          <div class="falling-line-1"></div>
+        </div>
+      </div>
       <div class="row">
         <img
           class="why_choose hidden col-lg-6 visible-lg"
           src="./img/testimonials/testimonial-2.png"
           alt="tetimonials img"
         />
-
         <div class="col-12 col-lg-6 testimonials-block" >
           <h4 class="section-title">TESTIMONIALS</h4>
           <h1 class="section-header">What Customer Saying</h1>
@@ -412,35 +438,12 @@
     <!-- testimonials: end -->
 
     <!-- companies2: start -->
-    <section class="container bg-background3">
-      <div class="row">
-        <div class="col-6 col-md-4 col-lg-4 ml-xl-1 col-xl-2">
-          <a class="partner-link" href="#"
-            ><img class="partner-logo" src="./img/companies/partners2/1.png" alt="Partner Logo"
-          /></a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-4 col-xl-2">
-          <a class="partner-link" href="#"
-            ><img class="partner-logo" src="./img/companies/partners2/2.png" alt="Partner Logo"
-          /></a>
-        </div>
-        <div class="hidden visible-md col-md-4 col-lg-4 col-xl-2">
-          <a class="partner-link" href="#"
-            ><img class="partner-logo" src="./img/companies/partners2/3.png" alt="Partner Logo"
-          /></a>
-        </div>
-        <div class="hidden visible-xl col-xl-2">
-          <a class="partner-link" href="#"
-            ><img class="partner-logo" src="./img/companies/partners2/4.png" alt="Partner Logo"
-          /></a>
-        </div>
-        <div class="hidden visible-xl col-xl-2">
-          <a class="partner-link" href="#"
-            ><img class="partner-logo" src="./img/companies/partners2/5.png" alt="Partner Logo"
-          /></a>
-        </div>
+    <section class="container bg-background3 companies">
+      <div class="row partners-row">
+        <div id="partners2_container"></div>     
       </div>
     </section>
+
     <!-- companies2: end -->
 
     <!-- contacts: start -->
@@ -527,24 +530,33 @@
     <!-- contacts: end -->
 
     <!-- footer: start -->
-    <footer class="container bg-background2 footer">
-      <div class="row">
+    <footer class="container-footer">
+      <div id="footer-row" class="row">
         <div class="copyright">
-          <i>icon</i>
-          2021 All Rights Reserved. Developed By
-          <ul>
-            <a href="#">RSTheme</a>
+          &copy
+          2021 All Rights Reserved. Developed By 
+          <ul class="RSThemeLink">
+            <a class="footer-links" href="#">RSTheme</a>
           </ul>
         </div>
-        <div class="footer-links">
-          <a href="#">Home</a>  
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Shop</a>
-          <a href="#">FAQs</a>
-        </div>
+        <nav class="footer-menu">
+          <a class="footer-links" href="#">Home</a>  
+          <small><i class="fa fa-circle icon-color" aria-hidden="true"></i></small>
+          <a class="footer-links" href="#">About</a>
+          <small><i class="fa fa-circle icon-color" aria-hidden="true"></i></small>
+          <a class="footer-links" href="#">Blog</a>
+          <small><i class="fa fa-circle icon-color" aria-hidden="true"></i></small>
+          <a class="footer-links" href="#">Shop</a>
+          <small><i class="fa fa-circle icon-color" aria-hidden="true"></i></small>
+          <a class="footer-links" href="#">FAQs</a>
+        </nav>
       </div>
     </footer>
+    <button onclick="topFunction()" id="ToTopBtn" title="Go to top">
+      ^
+    </button>
+    <script src="./js/data/footer.js"></script>
+
     <!-- footer: end -->
 
     <script src="./js/pages/home.js" type="module" defer></script>
