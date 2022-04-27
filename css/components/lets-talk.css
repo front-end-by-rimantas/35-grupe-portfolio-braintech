@@ -34,27 +34,31 @@ transition: all 0.3s
     font-weight: 400;
 }
 
+
 .bg-background2 {
     position: relative;
+    z-index: 1;
 }
 
 .all-lines {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    margin-left: calc(10% - 100px/2);
-    margin-right: calc(10% - 100px/2);
+    margin-left: 3.5%;
+    margin-right: 3.5%;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
     overflow: hidden;
+    z-index: -1;
 }
 
 .all-lines > .line {
     width: 2px;
     height: 100%;
     background-color: white;
+    overflow: hidden;
 }
 
 .falling-line-1 {
