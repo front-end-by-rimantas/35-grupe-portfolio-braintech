@@ -1,12 +1,12 @@
 const servicesData = [
     {
-        icon: 'lightbulb-o',
+        icon: 'cubes',
         title: 'Software Development',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?',
         colorFront: '#FA670D'
     },
     {
-        icon: 'database',
+        icon: 'random',
         title: 'Web development',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?',
         colorFront: '#F74759'
@@ -33,7 +33,7 @@ const servicesData = [
         icon: 'gear',
         title: 'Data Center',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis aliquam animi ipsam earum quisquam placeat?',
-        colorFront: '#149DFD'
+        colorFront: '#83CE3C'
     }
 ];
 
