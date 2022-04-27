@@ -7,6 +7,8 @@
     display: flex;
     justify-content: space-between;
     width: calc(6 / 3 * 100%);
+    transition: all 2s;
+    transform: translateX(-16.6%);
 }
 
 .blog-list > .blog-item{
