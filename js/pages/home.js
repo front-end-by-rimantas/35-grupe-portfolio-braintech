@@ -30,6 +30,7 @@ addEventListener('scroll', function () {
     }
 
 });
+/* -------------------search zone -------------------*/
 addEventListener('click', function(){
        const searchDOM = document.querySelector('#search');
        
@@ -46,6 +47,7 @@ addEventListener('click', function(){
      searchDOM.querySelector('.searchbox').style.left = "100%";
     }
 }); */
+/* -------------------search zone -------------------*/
 
 document.getElementById("myBtn").onclick = function() {myFunction()};
 
