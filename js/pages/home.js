@@ -15,6 +15,7 @@ import { renderPartners } from '../components/partners/partners.js';
 import { partnersData } from '../data/partnersData.js';
 import { renderPartners2 } from '../components/partners/partners2.js';
 import { partnersData2 } from '../data/partnersData2.js';
+
 // components execution
 
 /* header: start */
@@ -30,22 +31,19 @@ addEventListener('scroll', function () {
     }
 
 });
-addEventListener('click', function(){
-       const searchDOM = document.querySelector('#search');
-       
-       if(searchDOM.click){
-           searchDOM.querySelector('.searchbox').style.left = "0%";
-        }
-    });
-    
-/*     addEventListener('click', function(){
-        const searchDOM = document.querySelector('#search');
-        const searchX = document.querySelector('#x');
-        
-    if(searchX.click){
-     searchDOM.querySelector('.searchbox').style.left = "100%";
-    }
-}); */
+/* -------------------nine points zone -------------------*/
+
+
+/* -------------------nine points zone -------------------*/
+/* -------------------search zone -------------------*/
+
+document.querySelector('#ico').onclick = function() {
+    document.querySelector('#sbox').style.left = "0%";
+}
+document.querySelector('#x').onclick = function() {
+    document.querySelector('#sbox').style.left = "100%";
+}
+/* -------------------search zone -------------------*/
 
 document.getElementById("myBtn").onclick = function() {myFunction()};
 
