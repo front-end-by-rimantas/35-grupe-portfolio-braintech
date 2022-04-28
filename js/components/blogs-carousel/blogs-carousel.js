@@ -33,12 +33,17 @@ class BlogCarousel {
     }
 
     isValidSelector() {
-        return true;
+      return typeof this.selector === 'string' && this.selector !== '';
     }
 
     isValidData() {
-        return true;
-    }
+      if (!this.isObject(this.data)
+          || !Array.isArray(this.data.list)
+          || this.data.list.length === 0) {
+          return false;
+      }
+      return true;
+  }
 
     findTargetElement() {
         this.blogcarouselDOM = document.querySelector(this.selector);
@@ -76,114 +81,50 @@ class BlogCarousel {
 
     }
     listHTML () {
+      let HTML = '';
+      let copyCount = 0;
+
+      for (const key in this.size) {
+        if (copyCount < this.size[key]) {
+            copyCount = this.size[key];
+        }
+    }
+  
+      const list = [
+        ...this.data.list.slice(-copyCount),
+        ...this.data.list,
+        ...this.data.list.slice(0, copyCount),
+    ];
+
+   
+    console.log(list);
+
+      for (const item of this.data.list) {
+        HTML += `<div class="blog-item">
+        <div class="blog-style">
+          <img src="./img/blogs/1.jpg" alt="blog-image" class="blog-image"> 
+          <a href="#" class="link btn blue-btn blog-btn">Digital Technology</a>
+        </div>
+        <div class="blog-content">
+          <ul class="blog-data">
+             <li class="date"><i class="fa fa-calendar-check-o"></i>16 November 2020</li>
+             <li class="user"><i class="fa fa-user-o"></i>admin</li>
+         </ul>
+          <a class="blog-title">Tech Firms Support Huawei Restriction, Balk and Cost</a>
+          <p class="blog-p">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
+          <a class="link blog-info" href="#">Learn More</a>
+        </div>
+        </div>
+        `;
+    }
+
+    const trans = 100 / list.length * this.size.desktop;
+        
         return `<div class="blog-list-view">
-        <div class="blog-list">
-          <div class="blog-item">
-            <div class="blog-style">
-              <img src="./img/blogs/1.jpg" alt="blog-image" class="blog-image"> 
-              <a href="#" class="link btn blue-btn blog-btn">Digital Technology</a>
-            </div>
-            <div class="blog-content">
-              <ul class="blog-data">
-                 <li class="date"><i class="fa fa-calendar-check-o"></i>16 November 2020</li>
-                 <li class="user"><i class="fa fa-user-o"></i>admin</li>
-             </ul>
-              <a class="blog-title">Tech Firms Support Huawei Restriction, Balk and Cost</a>
-              <p class="blog-p">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-              <a class="link blog-info" href="#">Learn More</a>
-            </div>
-      
-          </div>
-          <div class="blog-list-view">
-        <div class="blog-list">
-          <div class="blog-item">
-            <div class="blog-style">
-              <img src="./img/blogs/1.jpg" alt="blog-image" class="blog-image"> 
-              <a href="#" class="link btn blue-btn blog-btn">Digital Technology</a>
-            </div>
-            <div class="blog-content">
-              <ul class="blog-data">
-                 <li class="date"><i class="fa fa-calendar-check-o"></i>16 November 2020</li>
-                 <li class="user"><i class="fa fa-user-o"></i>admin</li>
-             </ul>
-              <a class="blog-title">Tech Firms Support Huawei Restriction, Balk and Cost</a>
-              <p class="blog-p">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-              <a class="link blog-info" href="#">Learn More</a>
-            </div>
-      
-          </div>
-          <div class="blog-list-view">
-        <div class="blog-list">
-          <div class="blog-item">
-            <div class="blog-style">
-              <img src="./img/blogs/1.jpg" alt="blog-image" class="blog-image"> 
-              <a href="#" class="link btn blue-btn blog-btn">Digital Technology</a>
-            </div>
-            <div class="blog-content">
-              <ul class="blog-data">
-                 <li class="date"><i class="fa fa-calendar-check-o"></i>16 November 2020</li>
-                 <li class="user"><i class="fa fa-user-o"></i>admin</li>
-             </ul>
-              <a class="blog-title">Tech Firms Support Huawei Restriction, Balk and Cost</a>
-              <p class="blog-p">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-              <a class="link blog-info" href="#">Learn More</a>
-            </div>
-      
-          </div>
-          <div class="blog-list-view">
-        <div class="blog-list">
-          <div class="blog-item">
-            <div class="blog-style">
-              <img src="./img/blogs/1.jpg" alt="blog-image" class="blog-image"> 
-              <a href="#" class="link btn blue-btn blog-btn">Digital Technology</a>
-            </div>
-            <div class="blog-content">
-              <ul class="blog-data">
-                 <li class="date"><i class="fa fa-calendar-check-o"></i>16 November 2020</li>
-                 <li class="user"><i class="fa fa-user-o"></i>admin</li>
-             </ul>
-              <a class="blog-title">Tech Firms Support Huawei Restriction, Balk and Cost</a>
-              <p class="blog-p">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-              <a class="link blog-info" href="#">Learn More</a>
-            </div>
-      
-          </div>
-          <div class="blog-list-view">
-        <div class="blog-list">
-          <div class="blog-item">
-            <div class="blog-style">
-              <img src="./img/blogs/1.jpg" alt="blog-image" class="blog-image"> 
-              <a href="#" class="link btn blue-btn blog-btn">Digital Technology</a>
-            </div>
-            <div class="blog-content">
-              <ul class="blog-data">
-                 <li class="date"><i class="fa fa-calendar-check-o"></i>16 November 2020</li>
-                 <li class="user"><i class="fa fa-user-o"></i>admin</li>
-             </ul>
-              <a class="blog-title">Tech Firms Support Huawei Restriction, Balk and Cost</a>
-              <p class="blog-p">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-              <a class="link blog-info" href="#">Learn More</a>
-            </div>
-      
-          </div>
-          <div class="blog-list-view">
-        <div class="blog-list">
-          <div class="blog-item">
-            <div class="blog-style">
-              <img src="./img/blogs/1.jpg" alt="blog-image" class="blog-image"> 
-              <a href="#" class="link btn blue-btn blog-btn">Digital Technology</a>
-            </div>
-            <div class="blog-content">
-              <ul class="blog-data">
-                 <li class="date"><i class="fa fa-calendar-check-o"></i>16 November 2020</li>
-                 <li class="user"><i class="fa fa-user-o"></i>admin</li>
-             </ul>
-              <a class="blog-title">Tech Firms Support Huawei Restriction, Balk and Cost</a>
-              <p class="blog-p">We denounce with righteous indige nation and dislike men who are so beguiled...</p>
-              <a class="link blog-info" href="#">Learn More</a>
-            </div>
-      
-          </div>`
+        <div class="blog-list" style="transform: translateX(-${trans}%)">
+        ${HTML}
+        </div>
+       </div>`
     }
     render() {
         const HTML = this.listHTML();
