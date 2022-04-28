@@ -64,9 +64,9 @@
 }
 
 .services-card > i {
-    font-size: 70px;
     display: block;
     padding: 20px;
+    font-size: 70px;
 }
 
 .services-card:hover > .icon {
