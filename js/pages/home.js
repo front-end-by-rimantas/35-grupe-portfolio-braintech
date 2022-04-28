@@ -8,13 +8,14 @@ import { services } from '../components/services/services.js';
 import { whyChooseUs } from '../data/whyChooseUs.js';
 import { renderIconList } from '../components/lets-talk/lets-talk.js';
 import { letstalkData } from '../data/letstalkData.js';
-import { renderBlogs } from '../components/blogs/blogs.js';
+import { renderBlogs } from '../components/blogs-carousel/blogs.js';
 import { search } from '../components/search/search.js';
 import { blogsData } from '../data/blogsData.js';
 import { renderPartners } from '../components/partners/partners.js';
 import { partnersData } from '../data/partnersData.js';
 import { renderPartners2 } from '../components/partners/partners2.js';
 import { partnersData2 } from '../data/partnersData2.js';
+import { BlogCarousel } from '../components/blogs-carousel/blogs-carousel.js';
 
 // components execution
 
@@ -90,7 +91,16 @@ function myFunction() {
 /* let's talk: end */
 
 /* blogs: start */
-    renderBlogs('#blogs_container', blogsData);
+    const blogsCarousel = new BlogCarousel('#blogs_carousel', renderBlogs , blogsData, {
+        size: {
+            mobile: 1,
+            tablet: 1,
+            desktop: 1,
+        },
+       
+    });
+    console.log(blogsCarousel);
+
 /* blogs: end */
 
 /* testimonials: start */ 
