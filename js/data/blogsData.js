@@ -1,4 +1,6 @@
-const blogsData=[
+const blogsData={
+    imageFolder: './img/blogs/',
+    list: [
     {
         image: '1',
         button: 'Digital Technology',
@@ -26,7 +28,7 @@ const blogsData=[
         desc: 'We denounce with righteous indige nation and dislike men who are so beguiled...',
         link: 'Learn More'
     },
-    /*
+    
     {
         image: '4',
         button: 'IT Services',
@@ -53,6 +55,9 @@ const blogsData=[
         title: 'Servo Project Joins The Linux Foundation Fold Desco',
         desc: 'We denounce with righteous indige nation and dislike men who are so beguiled...',
         link: 'Learn More'
-    }, */
-];
+    }, 
+],
+
+};
+
 export { blogsData };
