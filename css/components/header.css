@@ -184,6 +184,9 @@
     padding: 3px;
     color: #6394bf;
 }
+.nav-expander:hover {
+    cursor: pointer;
+}
 
 .hamburger {
     font-size: 24px;

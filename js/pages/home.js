@@ -31,6 +31,10 @@ addEventListener('scroll', function () {
     }
 
 });
+/* -------------------nine points zone -------------------*/
+
+
+/* -------------------nine points zone -------------------*/
 /* -------------------search zone -------------------*/
 
 document.querySelector('#ico').onclick = function() {
