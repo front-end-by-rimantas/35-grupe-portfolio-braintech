@@ -28,6 +28,70 @@
 /* header: end */
 
 /* hero: start */
+
+.bg-background1 {
+    position: relative;
+    z-index: 1;
+}
+
+.all-lines .line1 {
+    width: 0.5px;
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    z-index: 100;
+}
+
+.all-lines > .line1 > .falling-line1 {
+    position: absolute;
+    top: -100px;
+    width: 3px;
+    height: 80px;
+    background-image: linear-gradient(white, #106eea);
+    z-index: 100;
+    opacity: 1;
+    animation-name: lineFall1;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes lineFall1 {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+.all-lines > .line1 > .falling-line2 {
+    position: absolute;
+    top: -100px;
+    width: 3px;
+    height: 80px;
+    background-image: linear-gradient(white, #106eea);
+    animation-name: lineFall2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;   
+}
+
+@keyframes lineFall2 {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
 /* hero: end */
 
 /* companies1: start */
