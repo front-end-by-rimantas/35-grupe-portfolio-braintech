@@ -33,19 +33,6 @@
     z-index: 1;
 }
 
-.all-lines {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    margin-left: 3.5%;
-    margin-right: 3.5%;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    overflow: hidden;
-}
-
 .all-lines .line1 {
     width: 1px;
     height: 100%;
