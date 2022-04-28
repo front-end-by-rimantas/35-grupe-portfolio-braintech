@@ -32,8 +32,12 @@ addEventListener('scroll', function () {
 
 });
 /* -------------------nine points zone -------------------*/
-
-
+document.querySelector('.nav-expander').onclick = function() {
+    document.querySelector('#nine').style.left = "0";
+}
+document.querySelector('.nine-row').onclick = function() {
+    document.querySelector('#nine').style.left = "100%";
+}
 /* -------------------nine points zone -------------------*/
 /* -------------------search zone -------------------*/
 
