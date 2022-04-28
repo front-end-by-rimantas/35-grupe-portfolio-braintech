@@ -246,6 +246,12 @@
     box-shadow: 0 0 20px rgb(0 0 0 / 15%);
 }
 
+@media only screen and (max-width: 991px) {
+    .main-header.header-white {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 1199px) {
     .navigation .nav-list:nth-child(1):hover .nav-listdrop {
         left: -280px;
@@ -344,4 +350,49 @@
 
 .ham-list > .ham-listdrop:hover {
     cursor: pointer;
+}
+
+.ham-inside {
+    display: none;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-top: 40px;
+    z-index: 99;
+}
+
+.show {
+    display: block;
+}
+
+.ham-inside-list {
+    display: grid;
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+}
+
+.ham-inside .ham-inside-list p {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.ham-inside .ham-inside-list a {
+    width: 100%;
+    padding-bottom: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.close-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f6f3ed;
+    line-height: 60px;
+}
+
+.close-bar i {
+    padding-right: 10px;
 }
