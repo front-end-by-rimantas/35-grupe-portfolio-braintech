@@ -1,3 +1,20 @@
+@media (max-width: 990px) {
+    .service-title {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .service-title::after {
+        content: none !important;
+    }
+    .service-title::before {
+        content: none !important;
+    }
+    .service-header {
+        text-align: center;
+    }
+}
+
 .btn-services {
     float: right;
     padding: 50px;
@@ -5,7 +22,8 @@
 
 @media (max-width: 990px) {
     .btn-services {
-        float: left;
+        width: 100%;
+        text-align: center;
         padding: 0;
     }
 }
