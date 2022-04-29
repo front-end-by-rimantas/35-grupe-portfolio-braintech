@@ -94,8 +94,8 @@ function myFunction() {
     const blogsCarousel = new BlogCarousel('#blogs_carousel', renderBlogs , blogsData, {
         size: {
             mobile: 1,
-            tablet: 1,
-            desktop: 1,
+            tablet: 2,
+            desktop: 3,
         },
        
     });
