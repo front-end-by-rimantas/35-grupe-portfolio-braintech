@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/pages/home.css">
     <link rel="stylesheet" href="./css/components/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="./css/3rd-party/dist/lity.css" rel="stylesheet">
     <!-- analytics -->
   </head>
 
@@ -104,7 +105,7 @@
             <ul class="nav-list"><a href="#">Contact</a></ul>
           </nav>
           <div class="hidden visible-lg side-icon">
-            <a href="#" class="hidden visible-lg nav-expander">
+            <a id="nine-nav" class="hidden visible-lg nav-expander">
               <i class="fa fa-circle nav-circle1"></i>
               <i class="fa fa-circle nav-circle2"></i>
               <i class="fa fa-circle nav-circle1"></i>
@@ -117,14 +118,69 @@
               <i class="fa fa-circle nav-circle2"></i>
               <i class="fa fa-circle nav-circle1"></i>
             </a>
+<!-- nine points zone -->
+            <div id="nine" class="nine">
+              <div class="left-nine"></div>
+              <div class="right-nine">
+                
+                <div class="right-contact">
+                  <div class="nine-row">
+                    <div class="nine-points"></div>
+                  </div>
+                  <img class="bottom-logo" src="./img/logo-dark.png" alt="logo dark" />
+                <p class="textwidget">
+                  Braintech quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas etiusto odio data center
+                </p>
+
+                <div class="contact-block">
+                  <h5 class="nine-contacts">Contact Info</h5>
+                  <div class="contact-info">
+                    <i class="fa fa-map-marker"></i>
+                    <p>374 FA Tower, William S Blvd 2721, IL, USA</p>
+                  </div>
+                  <div class="contact-info">
+                    <i class="fa fa-phone"></i>
+                    <a href="#">(+880)155-69569</a>
+                  </div>
+                  <div class="contact-info">
+                    <i class="fa fa-envelope"></i>
+                    <a href="#">support@rstheme.com</a>
+                  </div>
+                  <div class="contact-info">
+                    <i class="fa fa-clock-o"></i>
+                    <p>Opening Hours: 10:00 - 18:00</p>
+                  </div>
+                </div>
+
+                <div class="nine-block">
+                  <div class="nine-icon">
+                    <i class="fa fa-facebook-f"></i>
+                  </div>
+                  <div class="nine-icon">
+                    <i class="fa fa-twitter"></i>
+                  </div>
+                  <div class="nine-icon">
+                    <i class="fa fa-pinterest"></i>
+                  </div>
+                  <div class="nine-icon">
+                    <i class="fa fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+            </div>
+<!-- nine points zone -->
+<!-- search zone -->
             <a id="search" class="search-icon">
-              <i class="fa fa-search"></i>
-              <div class="searchbox">
+              <i id="ico" class="fa fa-search"></i>
+            </a>
+              <div id="sbox" class="searchbox">
                 <input class="searchinput" type="text" placeholder="Search..." autocomplete="off">
                 <div id="x" class="x">x</div>
               </div>
-              
-            </a>
+            
+<!-- search zone -->
           </div>
           <div class="visible-sm hidden-lg side-icon hamburger">
             <a href="#" id="myBtn"><i class="fa fa-bars"></i></a>
@@ -164,14 +220,23 @@
     <!-- header: end -->
 
     <!-- hero: start -->
-    <section class="container bg-background1">
+    <section class="container hero-container bg-background1">
+      <div class="all-lines">
+        <div class="line1">
+          <div class="falling-line1"></div>
+        </div>
+        <div class="line1">
+          <div class="falling-line2"></div>
+        </div>
+        <div class="line1">
+          <div class="falling-line1"></div>
+        </div>
+      </div>
       <div class="row hero-row">
-        <div class="hero-block col-12 col-lg-6">
+        <div class="hero-block col-9 col-lg-6">
           <div>
-            <a class="play-link" href="https://www.youtube.com/watch?v=YLN1Argi7ik">
-            <!-- <i class="play-circle fa fa-play-circle fa-2x"></i> -->
-            <div class="around-circle"></div>     
-            <div class="play-circle">&#x25B6;</div>
+            <a class="play-link" href="https://www.youtube.com/watch?v=YLN1Argi7ik" data-lity>
+            <div class="play-circle">&#x25B6;<div class="around-circle"></div></div>
             </a>
           </div>
           <h1 class="hero-title">We Are Digital Agency & Technology Solution</h1>
@@ -181,9 +246,7 @@
           </p>
           <a href="#" class="btn get-started-btn">Get Started</a>
         </div>
-        <div class="hidden visible-lg col-lg-6">
           <img class="hero-img" src="./img/hero/banner-4.png" alt="mainbanner">
-        </div>
       </div>
     </section>
 
@@ -262,10 +325,21 @@
 
     <!-- services: start -->
     <section class="container bg-background2">
+      <div class="all-lines">
+        <div class="line">
+          <div class="falling-line-1"></div>
+        </div>
+        <div class="line">
+          <div class="falling-line-2"></div>
+        </div>
+        <div class="line">
+          <div class="falling-line-1"></div>
+        </div>
+      </div>
       <div class="row">
-        <div class="column-service visible-grid-sm col-12 col-lg-6">
-          <h4 class="section-title">Services</h1>
-            <h1 class="section-header">What Solutions We Provide to Our Valued Customers</h1>
+        <div class="col-12 col-lg-6">
+          <h4 class="section-title service-title">Services</h4>
+          <h1 class="section-header">What Solutions We Provide to Our Valued Customers</h1>
         </div>
         <div class="btn-services">
           <a href="#" class="link btn get-started-btn">Get Started</a>
@@ -389,9 +463,11 @@
           </p>
         </div>
       </div>
+
       <div class="row">
-      <div id="blogs_container"></div>
-    </div>
+        <div id="blogs_carousel" class="col-12 carousel">
+       </div>
+     </div>
     
     </section>
     <!-- blogs: end -->
@@ -452,7 +528,7 @@
         <div class="col-7 col-lg-3">
           <div class="contact-block">
               <img class="bottom-logo" src="./img/logo-dark.png" alt="logo dark" />
-            <p class="textwidget">
+            <p>
               Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium
               doloremque denounce with illo inventore veritatis
             </p>
@@ -508,20 +584,15 @@
         <div class="col-7 col-lg-3">
           <div class="contact-block">
               <h5>Newsletter</h5>
-            <p class="textwidget">
+            <p>
               We denounce with righteous and in and dislike men who are so
               beguiled and demo realized.
             </p>
             <div class="form-row-2">
               <input id="email" type="email" class="input-2" placeholder="Your email adress" required>
-              <em class="paper-plane">
-                <input
-              type="submit" 
-              class="round-btn" 
-              value="Sign up"
-              >
-              </em>
-              <a href="#" class="flaticon-send"><i class="fa fa-paper-plane"></i></a>
+                <button type="submit" class="round-btn">
+                  <i class="fa fa-paper-plane"></i>
+                </button>
             </div>
           </div>
         </div>
@@ -531,7 +602,7 @@
 
     <!-- footer: start -->
     <footer class="container-footer">
-      <div id="footer-row" class="row">
+      <div class="row visible-flex row-footer">
         <div class="copyright">
           &copy
           2021 All Rights Reserved. Developed By 
@@ -553,12 +624,14 @@
       </div>
     </footer>
     <button onclick="topFunction()" id="ToTopBtn" title="Go to top">
-      ^
+      &#11165;
     </button>
-    <script src="./js/data/footer.js"></script>
+    <!-- <script src="./js/data/footer.js"></script> -->
 
     <!-- footer: end -->
 
     <script src="./js/pages/home.js" type="module" defer></script>
+    <script src="./js/3rd-party/vendor/jquery.js"></script>
+    <script src="./css/3rd-party/dist/lity.js"></script>
   </body>
 </html>

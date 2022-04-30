@@ -8,13 +8,15 @@ import { services } from '../components/services/services.js';
 import { whyChooseUs } from '../data/whyChooseUs.js';
 import { renderIconList } from '../components/lets-talk/lets-talk.js';
 import { letstalkData } from '../data/letstalkData.js';
-import { renderBlogs } from '../components/blogs/blogs.js';
+import { renderBlogs } from '../components/blogs-carousel/blogs.js';
 import { search } from '../components/search/search.js';
 import { blogsData } from '../data/blogsData.js';
 import { renderPartners } from '../components/partners/partners.js';
 import { partnersData } from '../data/partnersData.js';
 import { renderPartners2 } from '../components/partners/partners2.js';
 import { partnersData2 } from '../data/partnersData2.js';
+import { BlogCarousel } from '../components/blogs-carousel/blogs-carousel.js';
+
 // components execution
 
 /* header: start */
@@ -30,22 +32,23 @@ addEventListener('scroll', function () {
     }
 
 });
-addEventListener('click', function(){
-       const searchDOM = document.querySelector('#search');
-       
-       if(searchDOM.click){
-           searchDOM.querySelector('.searchbox').style.left = "0%";
-        }
-    });
-    
-/*     addEventListener('click', function(){
-        const searchDOM = document.querySelector('#search');
-        const searchX = document.querySelector('#x');
-        
-    if(searchX.click){
-     searchDOM.querySelector('.searchbox').style.left = "100%";
-    }
-}); */
+/* -------------------nine points zone -------------------*/
+document.querySelector('.nav-expander').onclick = function() {
+    document.querySelector('#nine').style.left = "0";
+}
+document.querySelector('.nine-row').onclick = function() {
+    document.querySelector('#nine').style.left = "100%";
+}
+/* -------------------nine points zone -------------------*/
+/* -------------------search zone -------------------*/
+
+document.querySelector('#ico').onclick = function() {
+    document.querySelector('#sbox').style.left = "0%";
+}
+document.querySelector('#x').onclick = function() {
+    document.querySelector('#sbox').style.left = "100%";
+}
+/* -------------------search zone -------------------*/
 
 document.getElementById("myBtn").onclick = function() {myFunction()};
 
@@ -88,7 +91,16 @@ function myFunction() {
 /* let's talk: end */
 
 /* blogs: start */
-    renderBlogs('#blogs_container', blogsData);
+    const blogsCarousel = new BlogCarousel('#blogs_carousel', renderBlogs , blogsData, {
+        size: {
+            mobile: 1,
+            tablet: 2,
+            desktop: 3,
+        },
+       
+    });
+    console.log(blogsCarousel);
+
 /* blogs: end */
 
 /* testimonials: start */ 

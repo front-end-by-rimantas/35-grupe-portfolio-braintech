@@ -18,15 +18,81 @@
 @import '../components/search.css';
 @import '../components/partners1.css';
 @import '../components/partners2.css';
+@import '../components/nine.css';
 
 
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* header: start */
+
 /* header: end */
 
 /* hero: start */
+
+.bg-background1 {
+    position: relative;
+    z-index: 1;
+}
+
+.all-lines .line1 {
+    width: 0.5px;
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    z-index: 100;
+}
+
+.all-lines > .line1 > .falling-line1 {
+    position: absolute;
+    top: -100px;
+    width: 3px;
+    height: 80px;
+    background-image: linear-gradient(white, #106eea);
+    z-index: 100;
+    opacity: 1;
+    animation-name: lineFall1;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes lineFall1 {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+.all-lines > .line1 > .falling-line2 {
+    position: absolute;
+    top: -100px;
+    width: 3px;
+    height: 80px;
+    background-image: linear-gradient(white, #106eea);
+    animation-name: lineFall2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;   
+}
+
+@keyframes lineFall2 {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
 /* hero: end */
 
 /* companies1: start */
@@ -211,12 +277,17 @@
     margin-bottom: 30px;
 }
 
-.textwidget {
-    line-height: 1.8;
-}
-
 .contact-block {
     margin-bottom: 30px;
+}
+
+.contact-block > p {
+    color: #454545;
+    line-height: 1.8em;
+}
+
+.contact-block > .contact-info > p {
+    color: #454545;
 }
 
 .contact-icon {
@@ -237,6 +308,14 @@
     background-color: #106eea;
     transition: all 1s ease;
     cursor: pointer;
+}
+
+.contact-block a:hover {
+    color: #106eea;
+}
+
+.contact-block .contact-info a:hover {
+    color: #106eea;
 }
 
 .contact-icon i {
@@ -261,6 +340,7 @@
 }
 
 .contact-info a {
+    color: #454545;
     text-decoration: none;
 }
 
@@ -281,16 +361,13 @@ h5 {
 }
 
 .it-services > li > a {
+    color: #454545;
     text-decoration: none;
 }
 
 .form-row-2 {
     margin: 30px 0 0;
     position: relative;
-}
-
-.partner-plane {
-    line-height: 1.8;
 }
 
 .input-2 {
@@ -301,7 +378,7 @@ h5 {
     background-color: var(--white);
     box-shadow: 0 0 25px #eeeeee;
     outline-style: none;
-    width: 91%;
+    width: 90%;
     line-height: 25px;
     box-sizing: border-box;
     overflow: hidden;
@@ -324,11 +401,10 @@ h5 {
     cursor: pointer;
 }
 
-.flaticon-send i {
+.round-btn i {
     position: absolute;
     right: 20px;
-    top: 20px;
-    bottom: 0;
+    top: 18px;
     font-size: 20px;
     color: var(--white);
 }
