@@ -16,6 +16,7 @@ import { partnersData } from '../data/partnersData.js';
 import { renderPartners2 } from '../components/partners/partners2.js';
 import { partnersData2 } from '../data/partnersData2.js';
 import { BlogCarousel } from '../components/blogs-carousel/blogs-carousel.js';
+import { Carousel } from '../components/ttCarousel/Carousel.js';
 
 // components execution
 
@@ -104,6 +105,7 @@ function myFunction() {
 /* blogs: end */
 
 /* testimonials: start */ 
+new Carousel('', [], {});
 /* testimonials: end */
 
 /* companies2: start */
