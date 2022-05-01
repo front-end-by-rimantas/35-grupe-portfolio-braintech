@@ -108,15 +108,15 @@ function myFunction() {
 /* blogs: end */
 
 /* testimonials: start */ 
-new Carousel('#tt_carousel', TestimonialCard, testimonialsData, {
+const ttCarousel = new Carousel('#tt_carousel', InterfaceCard, testimonialsData, {
         size: {
             mobile: 1,
             tablet: 1,
             desktop: 1,
-        },
-    previousNext: true,
-    dots: true
+        }
 });
+console.log(ttCarousel);
+
 /* testimonials: end */
 
 /* companies2: start */

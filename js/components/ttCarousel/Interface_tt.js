@@ -5,4 +5,4 @@ class InterfaceCard {
             </div>`
     }
 }    
-export { InterfaceCard }
+export { InterfaceCard };
