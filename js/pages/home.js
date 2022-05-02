@@ -108,14 +108,8 @@ function myFunction() {
 /* blogs: end */
 
 /* testimonials: start */ 
-const ttCarousel = new Carousel('#tt_carousel', InterfaceCard, testimonialsData, {
-        size: {
-            mobile: 1,
-            tablet: 1,
-            desktop: 1,
-        }
-});
-console.log(ttCarousel);
+new Carousel('#tt_carousel', InterfaceCard, testimonialsData);
+
 
 /* testimonials: end */
 
