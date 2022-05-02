@@ -75,6 +75,7 @@
     font-size: 30px;
     color: white;
     padding: 6px 12px;
+    text-decoration: none;
     cursor: pointer;
     border-radius: 70px !important;
     position: fixed;
@@ -84,6 +85,7 @@
     border: none;
     outline: none;
 }
+
 #ToTopBtn:hover {
     background-color: #0b70e1;
     background-color: transparent;
