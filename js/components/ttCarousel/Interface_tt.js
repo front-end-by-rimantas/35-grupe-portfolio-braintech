@@ -2,7 +2,6 @@ class InterfaceCard {
     constructor(folder, data){
         this.folder = folder;
         this.data = data;
-        console.log(this);
     }
     isValidFolder(){
         return typeof this.folder === 'string' && this.folder !=='';

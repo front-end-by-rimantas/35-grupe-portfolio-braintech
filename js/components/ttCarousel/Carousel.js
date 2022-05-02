@@ -14,6 +14,9 @@ class Carousel {
         this.previousNext = true;
         this.dots = true;
 
+        this.currentlyVisibleIndex = 0;
+        this.listSize = 0;
+
         this.init();
     }
 
@@ -31,6 +34,7 @@ class Carousel {
         this.updateDefaultSettings();
 
         this.render();
+        this.action();
     }
 
     isValidSelector() {
@@ -133,9 +137,10 @@ class Carousel {
             ...this.data.list,
             ...this.data.list.slice(0, copyCount)
         ];
-        const width = list.length / this.size.desktop * 100;
-        const trans = 100 / list.length;
-
+        this.listSize = list.length;
+        this.currentlyVisibleIndex = this.size.desktop;
+        const width = this.listSize / this.size.desktop * 100;
+        const trans = 100 / this.listSize * this.currentlyVisibleIndex;
        
 
         for (const item of list){
@@ -154,6 +159,25 @@ class Carousel {
 
     render(){
         this.carouselDOM.innerHTML = this.listHTML() + this.actionsHTML();
+    }
+
+    action() {
+        const listDOM = this.carouselDOM.querySelector('.list');
+        const nextDOM = this.carouselDOM.querySelector('.fa-angle-right');
+        const previousDOM = this.carouselDOM.querySelector('.fa-angle-left');
+
+        nextDOM.addEventListener('click', ()=>{
+            
+            this.currentlyVisibleIndex ++;
+            let trans = 100 / this.listSize * this.currentlyVisibleIndex;
+            listDOM.style.transform = `translateX(${trans})`;
+            console.log(listDOM.style.transform);
+
+        });
+        previousDOM.addEventListener('click', ()=>{
+            const trans = 100 / this.listSize * this.currentlyVisibleIndex;
+            this.currentlyVisibleIndex --;
+        });
     }
 
 }
