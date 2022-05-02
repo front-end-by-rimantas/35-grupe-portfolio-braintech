@@ -186,10 +186,11 @@ class Carousel {
                         listDOM.style.transform = `translateX(${trans}%)`;
                         setTimeout(() => {
                             listDOM.style.transition = 'all 1s';
-                        }, 16)
+                        }, 24)
                     }, this.animationDurationInMiliseconds)
                 }
                 this.animationInAction = true;
+
                 setTimeout(() => {
                     this.animationInAction = false;
                 }, this.animationDurationInMiliseconds)
@@ -211,7 +212,7 @@ class Carousel {
                         listDOM.style.transform = `translateX(${trans}%)`;
                         setTimeout(() => {
                             listDOM.style.transition = 'all 1s';
-                        }, 16)
+                        }, 24)
                     }, this.animationDurationInMiliseconds)
                 }
 
