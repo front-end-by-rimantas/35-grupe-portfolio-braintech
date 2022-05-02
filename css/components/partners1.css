@@ -1,8 +1,15 @@
-.companies{
+.companies {
+    display: flex;
+    justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 .partner-logo{
-    width:210px;
-    
+    width: 210px;
+}
+
+@media (max-width: 480px) {
+    .partner-logo {
+        width: 150px;
+    }
 }
