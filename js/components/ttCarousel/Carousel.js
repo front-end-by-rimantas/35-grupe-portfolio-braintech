@@ -136,8 +136,12 @@ class Carousel {
         const width = list.length / this.size.desktop * 100;
         const trans = 100 / list.length;
 
+       
+
         for (const item of list){
-            HTML += `<div class="item">ITEM</div>`;          
+            const card = new this.cardClass(this.data.srcFolder, item);
+            HTML += `<div class="item">${card.render()}</div>`;  
+               
         }
         return `
         <div class="list-view">
