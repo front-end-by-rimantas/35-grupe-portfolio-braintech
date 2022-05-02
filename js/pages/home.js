@@ -48,6 +48,7 @@ document.querySelector('.nine-row').onclick = function() {
 
 document.querySelector('#ico').onclick = function() {
     document.querySelector('#sbox').style.left = "0%";
+    document.querySelector('#sbox').style.width = "0%";
 }
 document.querySelector('#x').onclick = function() {
     document.querySelector('#sbox').style.left = "100%";
