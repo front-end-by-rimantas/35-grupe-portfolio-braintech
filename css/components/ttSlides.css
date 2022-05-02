@@ -22,7 +22,7 @@
 .carousel > .list-view > .list {
     display: flex;
     transform: translateX(0);
-    transition: 2s;
+    transition: 1s;
 }
 .carousel .list > .item {
     display: flex;
