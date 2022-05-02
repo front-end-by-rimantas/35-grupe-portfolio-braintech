@@ -2,7 +2,7 @@
 
 .main-header {
     padding: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -12,7 +12,7 @@
 
 .main-header.header-white {
     background-color: var(--white);
-    position: sticky;
+    position: fixed;
     opacity: 1;
     box-shadow: 0 4px 10px #0003;
 }
