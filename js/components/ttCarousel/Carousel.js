@@ -15,7 +15,12 @@ class Carousel {
         this.dots = true;
 
         this.currentlyVisibleIndex = 0;
+        this.originalListSize = this.data.list.length;
         this.listSize = 0;
+
+        this.copyCount = 0;
+        this.animationInAction = false;
+        this.animationDurationInMiliseconds = 1000;
 
         this.init();
     }
@@ -166,17 +171,56 @@ class Carousel {
         const nextDOM = this.carouselDOM.querySelector('.fa-angle-right');
         const previousDOM = this.carouselDOM.querySelector('.fa-angle-left');
 
-        nextDOM.addEventListener('click', ()=>{
-            
-            this.currentlyVisibleIndex ++;
-            let trans = 100 / this.listSize * this.currentlyVisibleIndex;
-            listDOM.style.transform = `translateX(${trans})`;
-            console.log(listDOM.style.transform);
+        nextDOM.addEventListener('click', () => {
+            if (!this.animationInAction) {
+                this.currentlyVisibleIndex++;
+                const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                listDOM.style.transform = `translateX(${trans}%)`;
 
+                // teleportas i prieki
+                if (this.currentlyVisibleIndex === this.originalListSize + this.copyCount) {
+                    setTimeout(() => {
+                        listDOM.style.transition = 'all 0s';
+                        this.currentlyVisibleIndex = this.copyCount;
+                        const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                        listDOM.style.transform = `translateX(${trans}%)`;
+                        setTimeout(() => {
+                            listDOM.style.transition = 'all 1s';
+                        }, 16)
+                    }, this.animationDurationInMiliseconds)
+                }
+                this.animationInAction = true;
+                setTimeout(() => {
+                    this.animationInAction = false;
+                }, this.animationDurationInMiliseconds)
+            }
         });
+
         previousDOM.addEventListener('click', ()=>{
-            const trans = 100 / this.listSize * this.currentlyVisibleIndex;
-            this.currentlyVisibleIndex --;
+            if (!this.animationInAction) {
+                this.currentlyVisibleIndex--;
+                const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                listDOM.style.transform = `translateX(${trans}%)`;
+
+                // teleportas i gala
+                if (this.currentlyVisibleIndex === 0) {
+                    setTimeout(() => {
+                        listDOM.style.transition = 'all 0s';
+                        this.currentlyVisibleIndex = this.listSize - 2 * this.copyCount;
+                        const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                        listDOM.style.transform = `translateX(${trans}%)`;
+                        setTimeout(() => {
+                            listDOM.style.transition = 'all 1s';
+                        }, 16)
+                    }, this.animationDurationInMiliseconds)
+                }
+
+                this.animationInAction = true;
+
+                setTimeout(() => {
+                    this.animationInAction = false;
+                }, this.animationDurationInMiliseconds)
+            }
         });
     }
 
