@@ -16,10 +16,14 @@ import { partnersData } from '../data/partnersData.js';
 import { renderPartners2 } from '../components/partners/partners2.js';
 import { partnersData2 } from '../data/partnersData2.js';
 import { BlogCarousel } from '../components/blogs-carousel/blogs-carousel.js';
+
+import { scrollFunction, topFunction } from '../components/totopbtn/totopbtn.js';
+
 import { Carousel } from '../components/ttCarousel/Carousel.js';
 import { testimonialsData } from '../data/testimonialsData.js';
 import { InterfaceCard } from '../components/ttCarousel/Interface_tt.js';
 import { TestimonialCard } from '../components/ttCarousel/Testimonial.js';
+
 
 // components execution
 
@@ -151,4 +155,6 @@ renderPartners2('#partners2_container', partnersData2);
 /* contacts: end */
 
 /* footer: start */
+    scrollFunction();
+    topFunction();
 /* footer: end */
