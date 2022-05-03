@@ -1,18 +1,16 @@
 @import '../base/base.css';
 
 .main-header {
-    background-image: var(--background1);
-    padding-top: 0;
-    padding-bottom: 0;
-    position: absolute;
+    padding: 0;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    margin: 0;
     z-index: 2;
 }
 
 .main-header.header-white {
-    background-image: none;
     background-color: var(--white);
     position: fixed;
     opacity: 1;
@@ -302,7 +300,14 @@
 .ham-list {
     display: none;
     position: relative;
+    width: 100%;
     margin-top: 20px;
+    background-color: var(--white);
+}
+
+.ham-listdrop {
+    position: absolute;
+    width: 100%;
     background-color: var(--white);
 }
 

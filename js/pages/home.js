@@ -32,7 +32,7 @@ import { TestimonialCard } from '../components/ttCarousel/Testimonial.js';
 const mainHeaderDOM = document.querySelector('.main-header');
 
 addEventListener('scroll', function () {
-    const headerPosition = 100;
+    const headerPosition = 50;
     if (scrollY > headerPosition) {
         mainHeaderDOM.classList.add('header-white');
     } else {
