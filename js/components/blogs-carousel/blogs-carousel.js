@@ -11,6 +11,15 @@ class BlogCarousel {
             tablet: 1,
             desktop: 1,
         },
+        this.previousNext = true;
+        this.dots = true;
+
+        this.currentlyVisibleIndex = 0;
+        this.originalListSize = this.data.list.length;
+        this.listSize = 0;
+        this.copyCount = 0;
+        this.animationInAction = false;
+        this.animationDurationInMiliseconds = 1000;
 
         this.init();
     }
@@ -79,9 +88,16 @@ class BlogCarousel {
                 this.size.desktop = this.settings.size.desktop;
             }
         }
-     
+        if (typeof this.settings.previousNext === 'boolean') {
+            this.previousNext = this.settings.previousNext;
+        }
 
+        if (typeof this.settings.dots === 'boolean') {
+            this.dots = this.settings.dots;
+        }
     }
+
+    
     listHTML () {
       let HTML = '';
       let copyCount = 0;
@@ -123,40 +139,101 @@ class BlogCarousel {
          
         this.blogcarouselDOM.innerHTML = HTML;
        }
+       actionsHTML() {
+        if (!this.previousNext && !this.dots) {
+            return '';
+        }
+
+        let leftAngleHTML = '';
+        let rightAngleHTML = '';
+        let dotsHTML = '';
+
+        if (this.previousNext) {
+            leftAngleHTML = '<i class="angle-icon fa fa-angle-left"></i>';
+            rightAngleHTML = '<i class="angle-icon fa fa-angle-right"></i>';
+        }
+
+        if (this.dots) {
+            dotsHTML = `<div class="dots">
+                            <i class="dot active"></i>
+                            ${'<i class="dot"></i>'.repeat(this.originalListSize - 1)}
+                        </div>`;
+        }
+
+        return `<div class="actions">
+                    ${leftAngleHTML}
+                    ${dotsHTML}
+                    ${rightAngleHTML}
+                </div>`;
+    }
+
+    render() {
+        const HTML = this.listHTML() + this.actionsHTML();
+        this.blogcarouselDOM.innerHTML = HTML;
+    }
+
 
     action() {
-        const slider = this.blogcarouselDOM.querySelector('.blog-list'),
-        slides = Array.from(document.querySelectorAll('.blog-item'))
-        
-        let isDragging = false
+        const listDOM = this.blogcarouselDOM.querySelector('.blog-list');
+        const nextDOM = this.blogcarouselDOM.querySelector('.fa-angle-right');
+        const previousDOM = this.blogcarouselDOM.querySelector('.fa-angle-left');
 
+        nextDOM.addEventListener('click', () => {
+            if (!this.animationInAction) {
+                this.currentlyVisibleIndex++;
+                const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                listDOM.style.transform = `translateX(${trans}%)`;
 
-        slides.forEach((slide, index) => {
-            slide.addEventListener('mousedown', touchStart(index))
-            slide.addEventListener('mouseup', touchEnd)
-            slide.addEventListener('mousemove', touchMove)
-            slide.addEventListener('mouseleave', touchEnd)
-          })
+                // teleportas i prieki
+                if (this.currentlyVisibleIndex === this.originalListSize + this.copyCount) {
+                    setTimeout(() => {
+                        listDOM.style.transition = 'all 0s';
+                        this.currentlyVisibleIndex = this.copyCount;
+                        const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                        listDOM.style.transform = `translateX(${trans}%)`;
+                        setTimeout(() => {
+                            listDOM.style.transition = 'all 1s';
+                        }, 16)
+                    }, this.animationDurationInMiliseconds)
+                }
 
-          function touchStart(index){
-              return function(event){
+                this.animationInAction = true;
 
-                  console.log('start')
-                  isDragging = true
-              }
-          }
-
-          function touchEnd(){
-            isDragging = false
-            console.log('end')
-          }
-
-          function touchMove(){
-            if(isDragging){
-                console.log('move')
+                setTimeout(() => {
+                    this.animationInAction = false;
+                }, this.animationDurationInMiliseconds)
             }
+        });
+
+        previousDOM.addEventListener('click', () => {
+            if (!this.animationInAction) {
+                this.currentlyVisibleIndex--;
+                const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                listDOM.style.transform = `translateX(${trans}%)`;
+
+                // teleportas i gala
+                if (this.currentlyVisibleIndex === 0) {
+                    setTimeout(() => {
+                        listDOM.style.transition = 'all 0s';
+                        this.currentlyVisibleIndex = this.listSize - 2 * this.copyCount;
+                        const trans = -100 / this.listSize * this.currentlyVisibleIndex;
+                        listDOM.style.transform = `translateX(${trans}%)`;
+                        setTimeout(() => {
+                            listDOM.style.transition = 'all 1s';
+                        }, 16)
+                    }, this.animationDurationInMiliseconds)
+                }
+
+                this.animationInAction = true;
+
+                setTimeout(() => {
+                    this.animationInAction = false;
+                }, this.animationDurationInMiliseconds)
+            }
+        });
+        
         }
       }
-}
+
 
 export { BlogCarousel }  
