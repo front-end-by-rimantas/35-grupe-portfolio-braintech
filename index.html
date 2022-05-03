@@ -190,23 +190,109 @@
           <div id="myDropdown" class="ham-list">
             <div class="ham-listdrop">
               <div class="ham-listdropdown">
-                <div class="btn-angle"><i class="fa fa-angle-down"></i></div>
+                <div id="myBtn1" class="btn-angle"><i class="fa fa-angle-down"></i></div>
                 <li><a href="#">Home</a></li>
+                  <div id="myDropdown1" class="ham-inside">
+                    <div class="ham-inside-list">
+                      <p>Home Multipage</p>
+                      <a href="#">Main Demo</a>
+                      <a href="#">Digital Agency 01</a>
+                      <a href="#">IT Solution 01</a>
+                      <a href="#">Digital Agency 02</a>
+                      <a href="#">Software Solution</a>
+                      <a href="#">Data Analysis</a>
+                      <a href="#">IT Solution 02</a>
+                    </div>
+                    <div class="ham-inside-list">
+                      <p>Home Multipage</p>
+                      <a href="#">Gadgets Repairs</a>
+                      <a href="#">Application Testing</a>
+                      <a href="#">IT Solution 03</a>
+                      <a href="#">Digital Agency Dark</a>
+                      <a href="#">Web Design Agency</a>
+                      <a href="#">Branding Agency</a>
+                      <a href="#">Technology Agency</a>
+                    </div>
+                    <div class="ham-inside-list">
+                      <p>Home Onepage</p>
+                      <a href="#">Main Demo</a>
+                      <a href="#">Digital Agency 01</a>
+                      <a href="#">IT Solution 01</a>
+                      <a href="#">Digital Agency 02</a>
+                      <a href="#">Software Solution</a>
+                      <a href="#">Data Analysis</a>
+                      <a href="#">IT Solution 02</a>
+                    </div>
+                    <div class="ham-inside-list">
+                      <p>Home Onepage</p>
+                      <a href="#">Gadgets Repairs</a>
+                      <a href="#">Application Testing</a>
+                      <a href="#">IT Solution 03</a>
+                      <a href="#">Digital Agency Dark</a>
+                      <a href="#">Web Design Agency</a>
+                      <a href="#">Branding Agency</a>
+                      <a href="#">Technology Agency</a>
+                    </div>
+                    <!-- <div class="close-bar">
+                      <i class="fa fa-times"></i>
+                      <p>Close</p>
+                    </div> -->
+                  </div>
               </div>
               <div class="ham-listdropdown">
                 <li><a href="#">About</a></li>
               </div>
               <div class="ham-listdropdown">
-                <div class="btn-angle"><i class="fa fa-angle-down"></i></div>
+                <div id="myBtn2" class="btn-angle"><i class="fa fa-angle-down"></i></div>
                 <li><a href="#">Services</a></li>
+                  <div id="myDropdown2" class="ham-inside">
+                    <div class="ham-inside-list">
+                      <a href="#">Software Development</a>
+                      <a href="#">Web Development</a>
+                      <a href="#">Analytic Solutions</a>
+                      <a href="#">Cloud And DevOps</a>
+                      <a href="#">Product Design</a>
+                      <a href="#">Data Center</a>
+                    </div>
+                    <!-- <div class="close-bar">
+                      <i class="fa fa-times"></i>
+                      <p>Close</p>
+                    </div> -->
+                  </div>
               </div>
               <div class="ham-listdropdown">
-                <div class="btn-angle"><i class="fa fa-angle-down"></i></div>
+                <div id="myBtn3" class="btn-angle"><i class="fa fa-angle-down"></i></div>
                 <li><a href="#">Pages</a></li>
+                  <div id="myDropdown3" class="ham-inside">
+                    <div class="ham-inside-list">
+                      <a href="#">Services</a>
+                      <a href="#">Our Team</a>
+                      <a href="#">Single Team</a>
+                      <a href="#">Case Studies</a>
+                      <a href="#">Shop</a>
+                      <a href="#">Pricing</a>
+                      <a href="#">Faq</a>
+                      <a href="#">404</a>
+                    </div>
+                    <!-- <div class="close-bar">
+                      <i class="fa fa-times"></i>
+                      <p>Close</p>
+                    </div> -->
+                  </div>
               </div>
               <div class="ham-listdropdown">
-                <div class="btn-angle"><i class="fa fa-angle-down"></i></div>
+                <div id="myBtn4" class="btn-angle"><i class="fa fa-angle-down"></i></div>
                 <li><a href="#">Blog</a></li>
+                  <div id="myDropdown4" class="ham-inside">
+                    <div class="ham-inside-list">
+                      <a href="#">Blog</a>
+                      <a href="#">Blog details</a>
+                    </div>
+                    <!-- <div class="close-bar">
+                      <i class="fa fa-times"></i>
+                      <p>Close</p>
+                    </div> -->
+                  </div>
               </div>
               <div class="ham-listdropdown">
                 <li><a href="#">Contact</a></li>
@@ -223,6 +309,7 @@
     <section class="container hero-container bg-background1">
       <div class="all-lines">
         <div class="line1">
+          <a id="top"></a>  anchor for to top button
           <div class="falling-line1"></div>
         </div>
         <div class="line1">
@@ -496,17 +583,10 @@
           <h1 class="section-header">What Customer Saying</h1>
           <p class="section-p">Over 25 years working in IT services developing software applications and
            mobile apps for clients all over the world.</p>
-          <div class="testimonials_slides">
-            <img src="./img/testimonials/slides.png" alt="png" class="png">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis consequuntur reiciendis tempore nostrum repellendus odio nulla. Tempore totam quasi assumenda doloribus ea voluptates natus quo velit, dolorem voluptatum fugiat.</div>
-            <div class="person">
-              <img src="./img/testimonials/p1.jpg" alt="person foto">
-              <div class="person-info">
-                <h2 class="person-name">Mariya Khan</h2>
-                <p class="person-response">CEO, Brick Consulting</p>
+           
+           <div id="tt_carousel" class="carousel">
 
-              </div>
-            </div>
+           </div>
         </div>
       </div>
     </div>
@@ -622,12 +702,8 @@
           <a class="footer-links" href="#">FAQs</a>
         </nav>
       </div>
+        <a id="ToTopBtn" href="#top">&#11165;</a>
     </footer>
-    <button onclick="topFunction()" id="ToTopBtn" title="Go to top">
-      &#11165;
-    </button>
-    <!-- <script src="./js/data/footer.js"></script> -->
-
     <!-- footer: end -->
 
     <script src="./js/pages/home.js" type="module" defer></script>

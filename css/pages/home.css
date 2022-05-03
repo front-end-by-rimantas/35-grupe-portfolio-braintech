@@ -10,15 +10,18 @@
 @import '../components/button.css';
 @import '../components/features.css';
 @import '../components/form.css';
+@import '../components/footer.css';
 @import '../components/hero.css';
 @import '../components/header.css';
 @import '../components/lets-talk.css';
 @import '../components/blogs.css';
 @import '../components/services.css';
 @import '../components/search.css';
+@import '../components/ttSlides.css';
 @import '../components/partners1.css';
 @import '../components/partners2.css';
 @import '../components/nine.css';
+@import '../components/totopbtn.css';
 
 
 
@@ -36,7 +39,7 @@
 }
 
 .all-lines .line1 {
-    width: 0.5px;
+    width: 1px;
     height: 100%;
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.2);
@@ -210,18 +213,6 @@
 /* testimonials: start */ 
 .testimonials-block{
     padding-left:30px;
-}
-
-.testimonials_slides {
-    position: relative;
-    background-color:white;
-    line-height: 1.8em;
-    font-size: 18px;
-    padding-top: 100px;
-    padding-bottom:100px;
-    z-index: 0;
-    padding-left:40px;
-    width: 100%;
 }
 .png {
     position: absolute;

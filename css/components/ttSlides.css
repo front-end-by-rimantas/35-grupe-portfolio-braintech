@@ -1,0 +1,72 @@
+.testimonials_slides {
+    position: relative;
+    background-color:white;
+    line-height: 1.8em;
+    font-size: 18px;
+    padding-top: 100px;
+    padding-bottom:100px;
+    z-index: 0;
+    padding-left:40px;
+    width: 100%;
+}
+
+.carousel {
+    
+    display: grid;
+    gap: 30px;
+}
+.carousel > .list-view {
+    width: 100%;
+    overflow: hidden;
+}
+.carousel > .list-view > .list {
+    display: flex;
+    transform: translateX(0);
+    transition: 1s;
+}
+.carousel .list > .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 6);
+
+    padding: 5px;
+}
+.carousel > .actions {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items:center;
+}
+.carousel > .actions > .angle-icon {
+    padding: 5px 10px;
+    font-size:24px;
+    cursor: pointer;
+}
+.carousel > .actions > .angle-icon:hover {
+    color: var(--blue);
+}
+.carousel > .actions > .dots{
+    display: flex;
+    align-items:center;
+    gap: 12px;
+}
+.carousel .dots > .dot{
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carousel .dots > .dot.active{
+    background-color: var(--blue);
+    transform: scale(1.4);
+}
+
+/* .carousel .dots > .dot:hover{
+    color: var(--blue);
+    transform: scale(1.4);
+} */
+.interface-card {
+    width: 100%;
+}

@@ -98,8 +98,7 @@ class BlogCarousel {
         ...this.data.list.slice(0, copyCount),
     ];
 
-   
-    console.log(this);
+
 
       for (const item of this.data.list) {
         const card = new this.blogitemClass(this.data.imageFolder, item);
@@ -108,10 +107,13 @@ class BlogCarousel {
         `;
     }
 
-    const trans = 100 / list.length * this.size.desktop;
+        this.listSize = list.length;
+        this.currentlyVisibleIndex = this.size.desktop;
+        const width = this.listSize / this.size.desktop * 100;
+        const trans = 100 / this.listSize * this.currentlyVisibleIndex;
         
         return `<div class="blog-list-view">
-        <div class="blog-list" style="transform: translateX(-${trans}%)">
+        <div class="blog-list" style="transform: translateX(-${trans}%) width: ${width}%;">
         ${HTML}
         </div>
        </div>`
@@ -123,7 +125,37 @@ class BlogCarousel {
        }
 
     action() {
-    
+        const slider = this.blogcarouselDOM.querySelector('.blog-list'),
+        slides = Array.from(document.querySelectorAll('.blog-item'))
+        
+        let isDragging = false
+
+
+        slides.forEach((slide, index) => {
+            slide.addEventListener('mousedown', touchStart(index))
+            slide.addEventListener('mouseup', touchEnd)
+            slide.addEventListener('mousemove', touchMove)
+            slide.addEventListener('mouseleave', touchEnd)
+          })
+
+          function touchStart(index){
+              return function(event){
+
+                  console.log('start')
+                  isDragging = true
+              }
+          }
+
+          function touchEnd(){
+            isDragging = false
+            console.log('end')
+          }
+
+          function touchMove(){
+            if(isDragging){
+                console.log('move')
+            }
+        }
       }
 }
 

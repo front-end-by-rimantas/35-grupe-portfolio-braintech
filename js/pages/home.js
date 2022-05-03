@@ -17,6 +17,14 @@ import { renderPartners2 } from '../components/partners/partners2.js';
 import { partnersData2 } from '../data/partnersData2.js';
 import { BlogCarousel } from '../components/blogs-carousel/blogs-carousel.js';
 
+import { scrollFunction, topFunction } from '../components/totopbtn/totopbtn.js';
+
+import { Carousel } from '../components/ttCarousel/Carousel.js';
+import { testimonialsData } from '../data/testimonialsData.js';
+import { InterfaceCard } from '../components/ttCarousel/Interface_tt.js';
+import { TestimonialCard } from '../components/ttCarousel/Testimonial.js';
+
+
 // components execution
 
 /* header: start */
@@ -24,7 +32,7 @@ import { BlogCarousel } from '../components/blogs-carousel/blogs-carousel.js';
 const mainHeaderDOM = document.querySelector('.main-header');
 
 addEventListener('scroll', function () {
-    const headerPosition = 100;
+    const headerPosition = 50;
     if (scrollY > headerPosition) {
         mainHeaderDOM.classList.add('header-white');
     } else {
@@ -44,16 +52,47 @@ document.querySelector('.nine-row').onclick = function() {
 
 document.querySelector('#ico').onclick = function() {
     document.querySelector('#sbox').style.left = "0%";
+    document.querySelector('#sbox').style.width = "0%";
 }
 document.querySelector('#x').onclick = function() {
     document.querySelector('#sbox').style.left = "100%";
 }
 /* -------------------search zone -------------------*/
 
+// hamburger
 document.getElementById("myBtn").onclick = function() {myFunction()};
+
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// home
+document.getElementById("myBtn1").onclick = function() {myFunction1()};
+
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// services
+document.getElementById("myBtn2").onclick = function() {myFunction2()};
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// pages
+document.getElementById("myBtn3").onclick = function() {myFunction3()};
+
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+// blog
+document.getElementById("myBtn4").onclick = function() {myFunction4()};
+
+function myFunction4() {
+  document.getElementById("myDropdown4").classList.toggle("show");
 }
 
 
@@ -104,6 +143,9 @@ function myFunction() {
 /* blogs: end */
 
 /* testimonials: start */ 
+new Carousel('#tt_carousel', InterfaceCard, testimonialsData);
+
+
 /* testimonials: end */
 
 /* companies2: start */
@@ -114,4 +156,6 @@ renderPartners2('#partners2_container', partnersData2);
 /* contacts: end */
 
 /* footer: start */
+    scrollFunction();
+    topFunction();
 /* footer: end */
